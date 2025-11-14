@@ -197,28 +197,32 @@ function App() {
 
   <h3>Equipo de organización estudiantil</h3>
   <ul style={{ listStyle: "none", padding: 0 }}>
-    <li>Lucas Humanes — Magíster en Química</li>
-    <li>Reyes — Magíster en Química</li>
-    <li>Macarena — Magíster en Física</li>
-    <li>Victoria — PhD Física</li>
-    <li>Bayron — Fotografía (PhD UA)</li>
-    <li>Tatiana — PhD Física</li>
-    <li>Andrés — PhD Física</li>
+    <li>Lucas Humanez – Magíster en Química</li>
+    <li>Diany Reyes – Magíster en Química</li>
+    <li>Pablo Garrido – Magíster en Química</li>
+    <li>Macarena López – Magíster en Física</li>
+    <li>Victoria Acosta – Doctorado en Física</li>
+    <li>Bayron Micolta – Doctorado en Física</li>
+    <li>Tatiana Araya – Doctorado en Física</li>
+    <li>Andrés Layana – Doctorado en Física</li>
+    <li>Luis Miguel Galvis – Magíster en Física</li>
+    <li>Ricardo Zamora – Magíster en Física</li>
   </ul>
 
   <div className="info-card" style={{ marginTop: 30 }}>
     <h3>Responsables académicos</h3>
     <ul style={{ listStyle: "none", padding: 0, lineHeight: 1.6 }}>
-      <li>
-        <strong>Dr. Luis Rojas</strong> — Coordinación general y dominio web  
-        <br />
-        <a href="mailto:l.rojas@ucn.cl">l.rojas@ucn.cl</a> · <a href="tel:+56934400287">+56 9 3440 0287</a>
-      </li>
-      <li>
-        <strong>Dr. César Bonilla</strong> — Director de postgrado de físicaj
+            <li>
+        <strong>Dr. César Bonilla</strong> 
         <br />
         <a href="mailto:cesar.bonilla@ucn.cl">cesar.bonilla@ucn.cl</a> · <a href="tel:+56941029491">+56 9 4102 9491</a>
       </li>
+      <li>
+        <strong>Dr. Luis Rojas</strong> 
+        <br />
+        <a href="mailto:l.rojas@ucn.cl">l.rojas@ucn.cl</a> · <a href="tel:+56934400287">+56 9 3440 0287</a>
+      </li>
+
     </ul>
   </div>
 </section>
