@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/investigadores-EIE/static/css/main.d894aaee.css",
-    "main.js": "/investigadores-EIE/static/js/main.871623d6.js",
+    "main.js": "/investigadores-EIE/static/js/main.25f4e5bd.js",
     "static/js/453.62a51843.chunk.js": "/investigadores-EIE/static/js/453.62a51843.chunk.js",
     "static/media/eie-logo.png": "/investigadores-EIE/static/media/eie-logo.50ae694560bfa8a4076c.png",
     "static/media/eie-logo-removebg.png": "/investigadores-EIE/static/media/eie-logo-removebg.695de73bb07ee0d8f75b.png",
     "static/media/Escudo-UCN-Logo.png": "/investigadores-EIE/static/media/Escudo-UCN-Logo.af50265e5c2878e39414.png",
     "index.html": "/investigadores-EIE/index.html",
     "main.d894aaee.css.map": "/investigadores-EIE/static/css/main.d894aaee.css.map",
-    "main.871623d6.js.map": "/investigadores-EIE/static/js/main.871623d6.js.map",
+    "main.25f4e5bd.js.map": "/investigadores-EIE/static/js/main.25f4e5bd.js.map",
     "453.62a51843.chunk.js.map": "/investigadores-EIE/static/js/453.62a51843.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d894aaee.css",
-    "static/js/main.871623d6.js"
+    "static/js/main.25f4e5bd.js"
   ]
 }
