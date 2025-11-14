@@ -1,0 +1,162 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 30s linear;
+  }
+}
+
+body {
+  background-color: #06023a;
+  margin: 0;
+  color: white;
+}
+
+.App-header {
+  background-color: #06023a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.App-main {
+  padding: 40px 20px;
+  color: white;
+}
+
+.App-section {
+  margin-bottom: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 20px;
+}
+
+.App-section h2 {
+  color: #f7f7f7;
+}
+
+.App-footer {
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+.App-description {
+  background-color: #090b4d;
+  color: #f5f5f5;
+  padding: 10px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-size: 1.4em;
+}
+
+.App-description a {
+  color: #6cc3ff;
+  text-decoration: none;
+}
+
+.App-description a:hover {
+  text-decoration: underline;
+}
+
+.App-table {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 0.95em;
+}
+
+.App-table th,
+.App-table td {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 12px 10px;
+  text-align: center;
+}
+
+.App-table th {
+  background-color: rgba(255, 255, 255, 0.1);
+  font-weight: bold;
+  color: #c7e0ff;
+}
+
+.App-table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+
+.info-card {
+  background-color: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 10px;
+  padding: 18px;
+  margin: 18px auto;
+  max-width: 900px;
+  color: #f0f3ff;
+}
+
+.info-card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #cfe6ff;
+}
+
+.info-card ul {
+  margin: 10px 0 0 18px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 10px;
+  padding: 10px 14px;
+  border: 1px solid rgba(255,255,255,0.25);
+  background: #0f172a;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn.outline {
+  background: transparent;
+  color: #fff;
+}
+
+.App-section a {
+  color: #6cc3ff;
+  text-decoration: none;
+}
+
+.App-section a:hover {
+  text-decoration: underline;
+}

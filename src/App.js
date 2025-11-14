@@ -1,0 +1,249 @@
+import eieLogo from './eie-logo.png';
+import eieLogoRmBG from './eie-logo-removebg.png';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+
+      {/* ====================== HEADER ====================== */}
+      <header className="App-header">
+        <img 
+          src={eieLogoRmBG} 
+          className="App-logo"
+          alt="Logo EIE" 
+        />
+        <h1>Encuentro de Investigadores Emergentes</h1>
+        <p>Facultad de Ciencias — Universidad Católica del Norte</p>
+      </header>
+
+      
+
+      {/* ====================== DESCRIPCIÓN ====================== */}
+      <section className="App-description">
+        <p>
+          El <strong>Encuentro de Investigadores Emergentes (EIE)</strong> es una iniciativa 
+          organizada por estudiantes de postgrado de la 
+          <a href="https://www.ucn.cl/" target="_blank" rel="noreferrer"> Universidad Católica del Norte (UCN)</a>,
+          Facultad de Ciencias Básicas. Su objetivo es crear un espacio donde jóvenes investigadores 
+          puedan compartir sus avances, resultados y proyectos en desarrollo.
+        </p>
+
+        <p>
+          El evento contará con <strong>presentaciones plenarias</strong>, 
+          <strong> charlas de jóvenes investigadores</strong> y una sesión de 
+          <strong> posters</strong>. Está abierto a toda la comunidad académica 
+          y científica interesada en conocer y difundir el trabajo de las nuevas generaciones.
+        </p>
+
+        <p>
+          ¡Todos son bienvenidos a participar y contribuir al fortalecimiento de la investigación en la Región!
+        </p>
+      </section>
+
+      {/* ====================== MAIN ====================== */}
+      <main className="App-main">
+        <section id="fechas" className="App-section">
+          <h2>📅 Fechas y lugar</h2>
+          <p>6–7 de enero de 2026 · Auditorio (por confirmar)</p>
+        </section>
+
+
+
+                {/* --- Sección 3: Programa / Timetable --- */}
+        <section id="timetable" className="App-section">
+          <h2>🕒 Programa del evento</h2>
+          <p>
+            El siguiente programa tentativo muestra la estructura general del evento.  
+            Los horarios y charlas serán confirmados próximamente.
+          </p>
+
+          <table className="App-table">
+            <thead>
+              <tr>
+                <th>Día</th>
+                <th>Hora</th>
+                <th>Actividad</th>
+                <th>Ponente / Área</th>
+                <th>Ubicación</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Martes 6 Ene</td>
+                <td>09:00 – 09:30</td>
+                <td>Apertura e inauguración</td>
+                <td>—</td>
+                <td>Auditorio principal</td>
+              </tr>
+              <tr>
+                <td>Martes 6 Ene</td>
+                <td>09:30 – 11:00</td>
+                <td>Sesión Plenaria</td>
+                <td>Por confirmar</td>
+                <td>Auditorio principal</td>
+              </tr>
+              <tr>
+                <td>Martes 6 Ene</td>
+                <td>11:00 – 11:30</td>
+                <td>Coffee Break</td>
+                <td>—</td>
+                <td>Hall Facultad de Ciencias</td>
+              </tr>
+              <tr>
+                <td colSpan="5" style={{ textAlign: "center", color: "#aaa" }}>
+                  <em>Más actividades serán añadidas próximamente...</em>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+                {/* --- Sección 4: Información general / FAQ --- */}
+        <section id="info" className="App-section">
+          <h2>ℹ️ Información general / FAQ</h2>
+
+          {/* Inscripción */}
+          <div className="info-card">
+            <h3>Inscripción</h3>
+            <p>
+              La inscripción se realizará a través del siguiente enlace (por confirmar):{" "}
+              <a href="#" onClick={(e)=>e.preventDefault()}>Formulario Google</a>.
+              Completa tus datos y modalidad (<strong>charla</strong> o <strong>poster</strong>).
+            </p>
+            <ul>
+              <li>Recomendado: adjuntar el aval de tu director(a) si tu trabajo aún no está publicado.</li>
+              <li>Al confirmar tu inscripción recibirás un <strong>QR</strong> para el acceso el día del evento.</li>
+            </ul>
+          </div>
+
+          {/* Resumen (abstract) */}
+          <div className="info-card">
+            <h3>Resumen (abstract)</h3>
+            <ul>
+              <li>Extensión sugerida: 150–250 palabras (máx. 1 figura opcional).</li>
+              <li>Formato: título, autores/afiliaciones, palabras clave.</li>
+              <li>Archivo (opcional): PDF o DOCX. Nombre: <code>Apellido_PrimeraPalabraDelTítulo.pdf</code></li>
+            </ul>
+          </div>
+
+          {/* Modalidades y tiempos */}
+          <div className="info-card">
+            <h3>Modalidades y tiempos</h3>
+            <ul>
+              <li><strong>Charlas</strong>: 15 min + 5 min preguntas.</li>
+              <li><strong>Posters</strong>: sesión dedicada con recorrido de evaluadores.</li>
+              <li><strong>Plenarias</strong>: por invitación de los departamentos (por confirmar).</li>
+            </ul>
+          </div>
+
+          {/* Posters: dimensiones (por confirmar) */}
+          <div className="info-card">
+            <h3>Posters — dimensiones y formato</h3>
+            <p>(Por confirmar con logística). Sugerencia base para que puedas diseñar desde ya:</p>
+            <table className="App-table">
+              <thead>
+                <tr>
+                  <th>Tamaño</th><th>Orientación</th><th>Formato</th><th>Impresión</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>A0 (841 × 1189 mm)</td><td>Vertical</td><td>PDF/PNG alta resolución</td><td>Color</td>
+                </tr>
+              </tbody>
+            </table>
+            <ul>
+              <li>Incluye logo de la UCN y tu programa/centro (si corresponde).</li>
+              <li>Tip: títulos legibles.</li>
+            </ul>
+          </div>
+
+          {/* Criterios y selección */}
+          <div className="info-card">
+            <h3>Criterios y selección</h3>
+            <p>
+              Prioridad a <strong>investigadores/as emergentes</strong> con resultados en curso o próximos a publicación.
+              La asignación charla/poster se hará con base en una <strong>rúbrica</strong> de calidad, avance,
+              claridad e interdisciplinariedad (versión final por publicar).
+            </p>
+            <ul>
+              <li>Notificación de aceptación: (por confirmar fecha).</li>
+              <li>Se entregarán certificados de participación/ponencia (por confirmar).</li>
+            </ul>
+          </div>
+
+          {/* Logística rápida */}
+          <div className="info-card">
+            <h3>Logística rápida</h3>
+            <ul>
+              <li>Registro con <strong>QR</strong> en el acceso.</li>
+              <li>Coffee/snacks: (por confirmar proveedor). </li>
+              <li>Soporte audiovisual: proyector HDMI; lleva tu adaptador si usas USB-C/DisplayPort.</li>
+              <li>Wi-Fi UCN: (por confirmar SSID/sala).</li>
+              <li>Fotografía: cobertura por Bayron (consentimiento de imagen implícito en el registro).</li>
+              <li>Código de conducta: respeto, inclusión y trato profesional en todas las actividades.</li>
+            </ul>
+            <div style={{marginTop: 12, display: "flex", gap: 10, flexWrap: "wrap"}}>
+              <a className="btn" href="#" onClick={(e)=>e.preventDefault()}>Formulario de inscripción</a> {/*reemplazar # por el link y eliminar "onClick={(e)=>e.preventDefault()}" cuando esté listo, LO MISMO CON TODOS LOS OTROS LINKS*/}
+              <a className="btn outline" href="#" onClick={(e)=>e.preventDefault()}>Bases (PDF)</a>
+            </div>
+          </div>
+        </section>
+
+
+<section id="comite" className="App-section">
+  <h2>👥 Comité organizador</h2>
+
+  <h3>Equipo de organización estudiantil</h3>
+  <ul style={{ listStyle: "none", padding: 0 }}>
+    <li>Lucas Humanes — Magíster en Química</li>
+    <li>Reyes — Magíster en Química</li>
+    <li>Macarena — Magíster en Física</li>
+    <li>Victoria — PhD Física</li>
+    <li>Bayron — Fotografía (PhD UA)</li>
+    <li>Tatiana — PhD Física</li>
+    <li>Andrés — PhD Física</li>
+  </ul>
+
+  <div className="info-card" style={{ marginTop: 30 }}>
+    <h3>Responsables académicos</h3>
+    <ul style={{ listStyle: "none", padding: 0, lineHeight: 1.6 }}>
+      <li>
+        <strong>Dr. Luis Rojas</strong> — Coordinación general y dominio web  
+        <br />
+        <a href="mailto:l.rojas@ucn.cl">l.rojas@ucn.cl</a> · <a href="tel:+56934400287">+56 9 3440 0287</a>
+      </li>
+      <li>
+        <strong>Dr. César Bonilla</strong> — Director de postgrado de físicaj
+        <br />
+        <a href="mailto:cesar.bonilla@ucn.cl">cesar.bonilla@ucn.cl</a> · <a href="tel:+56941029491">+56 9 4102 9491</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+        <section id="contacto" className="App-section">
+          <h2>✉️ Contacto</h2>
+          <p>investigadores.emergentes.ucn@gmail.com</p>
+        </section>
+      </main>
+
+      {/* ====================== FOOTER ====================== */}
+<footer className="App-footer">
+  <div style={{display:"flex", justifyContent:"center", alignItems:"center", gap:12, flexWrap:"wrap"}}>
+    <img
+      src={require('./Escudo-UCN-Logo.png')}
+      alt="Logo UCN"
+      style={{height:50, width:"auto"}}
+    />
+    <p>© 2026 Investigadores Emergentes — Facultad de Ciencias UCN</p>
+  </div>
+</footer>
+
+    </div>
+  );
+}
+
+export default App;
