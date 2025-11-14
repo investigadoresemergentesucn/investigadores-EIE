@@ -14,13 +14,13 @@
 }
 
 body {
-  background-color: #06023a;
+  background-color: #091757;
   margin: 0;
   color: white;
 }
 
 .App-header {
-  background-color: #06023a;
+  background-color: #091757;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -160,3 +160,4 @@ body {
 .App-section a:hover {
   text-decoration: underline;
 }
+
