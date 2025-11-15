@@ -1,13 +1,55 @@
-import eieLogo from './eie-logo.png';
+//React
+import { useEffect } from 'react';
+//Logo EIE
 import eieLogoRmBG from './eie-logo-removebg.png';
+//CSS config
+import './App.css';
+
+// committee photos
+import defaultPhoto from './comite/logo.png';
+import macarenaImg from './comite/macarena.jpeg';
+import ricardoImg from './comite/ricardo.jpeg';
+import victoriaImg from './comite/victoria.jpeg';
+import cesarImg from './responsables/cesarbonilla.jpg';
+import luisImg from './responsables/luisrojas.jpeg';
+import bayronImg from './comite/Bayron.jpg';
+import dianiImg from './comite/Diany.JPG';
+import lucasImg from './comite/Lucas H.jpeg';
+import tatianaImg from './comite/tatiana.JPG';
+
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    // Remove any #section from the URL
+    if (window.location.hash) {
+      window.history.replaceState(
+        null,
+        '',
+        window.location.pathname + window.location.search
+      );
+    }
+
+    // Force scroll to top on initial load
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }, []);
+
+
+
   return (
     <div className="App">
 
       {/* ====================== HEADER ====================== */}
       <header className="App-header">
+        <nav className="App-nav">
+          <a href="#informacion">Información</a>
+          <a href="#programa">Programa</a>
+          <a href="#fecha">Fecha</a>
+          <a href="#comite">Comité</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+
+
         <img 
           src={eieLogoRmBG} 
           className="App-logo"
@@ -43,7 +85,7 @@ function App() {
 
       {/* ====================== MAIN ====================== */}
       <main className="App-main">
-        <section id="fechas" className="App-section">
+        <section id="fecha" className="App-section">
           <h2>📅 Fechas y lugar</h2>
           <p>6–7 de enero de 2026 · Auditorio (por confirmar)</p>
         </section>
@@ -51,7 +93,7 @@ function App() {
 
 
                 {/* --- Sección 3: Programa / Timetable --- */}
-        <section id="timetable" className="App-section">
+        <section id="programa" className="App-section">
           <h2>🕒 Programa del evento</h2>
           <p>
             El siguiente programa tentativo muestra la estructura general del evento.  
@@ -100,7 +142,7 @@ function App() {
         </section>
 
                 {/* --- Sección 4: Información general / FAQ --- */}
-        <section id="info" className="App-section">
+        <section id="informacion" className="App-section">
           <h2>ℹ️ Información general / FAQ</h2>
 
           {/* Inscripción */}
@@ -195,42 +237,102 @@ function App() {
 <section id="comite" className="App-section">
   <h2>👥 Comité organizador</h2>
 
-  <h3>Equipo de organización estudiantil</h3>
-  <ul style={{ listStyle: "none", padding: 0 }}>
-    <li>Lucas Humanez – Magíster en Química</li>
-    <li>Diany Reyes – Magíster en Química</li>
-    <li>Pablo Garrido – Magíster en Química</li>
-    <li>Macarena López – Magíster en Física</li>
-    <li>Victoria Acosta – Doctorado en Física</li>
-    <li>Bayron Micolta – Doctorado en Física</li>
-    <li>Tatiana Araya – Doctorado en Física</li>
-    <li>Andrés Layana – Doctorado en Física</li>
-    <li>Luis Miguel Galvis – Magíster en Física</li>
-    <li>Ricardo Zamora – Magíster en Física</li>
-  </ul>
-
-  <div className="info-card" style={{ marginTop: 30 }}>
-    <h3>Responsables académicos</h3>
-    <ul style={{ listStyle: "none", padding: 0, lineHeight: 1.6 }}>
-            <li>
-        <strong>Dr. César Bonilla</strong> 
-        <br />
-        <a href="mailto:cesar.bonilla@ucn.cl">cesar.bonilla@ucn.cl</a> · <a href="tel:+56941029491">+56 9 4102 9491</a>
-      </li>
-      <li>
-        <strong>Dr. Luis Rojas</strong> 
-        <br />
-        <a href="mailto:l.rojas@ucn.cl">l.rojas@ucn.cl</a> · <a href="tel:+56934400287">+56 9 3440 0287</a>
-      </li>
-
-    </ul>
+  {/* President on top, centered */}
+  <div className="Committee-president">
+    <div className="PersonCard PersonCard--president">
+      <img src={victoriaImg} alt="Victoria Acosta" />
+      <h4>Victoria Acosta</h4>
+      <p>Presidenta del comité · Doctorado en Física</p>
+    </div>
   </div>
+
+  <h3>Equipo de comité</h3>
+
+  {/* Grid for the rest of the student committee */}
+  <div className="Committee-grid">
+        <div className="PersonCard">
+      <img src={macarenaImg} alt="Macarena López" />
+      <h4>Macarena López</h4>
+      <p>Magíster en Física</p>
+    </div>
+
+    <div className="PersonCard">
+      <img src={defaultPhoto} alt="Luis Miguel Galvis" />
+      <h4>Luis Miguel Galvis</h4>
+      <p>Magíster en Física</p>
+    </div>
+
+    <div className="PersonCard">
+      <img src={dianiImg} alt="Diany Reyes" />
+      <h4>Diany Reyes</h4>
+      <p>Magíster en Química</p>
+    </div>
+
+    <div className="PersonCard">
+      <img src={lucasImg} alt="Lucas Humanez" />
+      <h4>Lucas Humanez</h4>
+      <p>Magíster en Química</p>
+    </div>
+
+    <div className="PersonCard">
+      <img src={tatianaImg} alt="Tatiana Araya" />
+      <h4>Tatiana Araya</h4>
+      <p>Doctorado en Física</p>
+    </div>
+
+    <div className="PersonCard">
+      <img src={defaultPhoto} alt="Pablo Garrido" />
+      <h4>Pablo Garrido</h4>
+      <p>Magíster en Química</p>
+    </div>
+
+    <div className="PersonCard">
+      <img src={bayronImg} alt="Bayron Micolta" />
+      <h4>Bayron Micolta</h4>
+      <p>Doctorado en Física</p>
+    </div>
+
+    <div className="PersonCard">
+      <img src={defaultPhoto} alt="Andrés Layana" />
+      <h4>Andrés Layana</h4>
+      <p>Doctorado en Física</p>
+    </div>
+
+    <div className="PersonCard">
+      <img src={ricardoImg} alt="Ricardo Zamora" />
+      <h4>Ricardo Zamora</h4>
+      <p>Magíster en Física</p>
+    </div>
+  </div>
+
+    <h3>Responsables académicos</h3>
+
+    <div className="Committee-grid">
+
+    <div className="PersonCard">
+      <img src={cesarImg} alt="César Bonilla" />
+      <h4>Dr. César Bonilla</h4>
+      
+      <a href="mailto:cesar.bonilla@ucn.cl">cesar.bonilla@ucn.cl</a> {/*. */}{" "}
+       {/* <a href="tel:+56941029491">+56 9 4102 9491</a> */}
+    </div>
+
+    <div className="PersonCard">
+      <img src={luisImg} alt="Luis Rojas" />
+      <h4>Dr. Luis Rojas</h4>
+      <a href="mailto:l.rojas@ucn.cl">l.rojas@ucn.cl</a> {/*.*/}{" "}
+       {/* <a href="tel:+56934400287">+56 9 3440 0287</a> */}
+    </div>
+
+    </div>
+
 </section>
 
 
         <section id="contacto" className="App-section">
           <h2>✉️ Contacto</h2>
-          <p>investigadores.emergentes.ucn@gmail.com</p>
+          <br />
+          <a href="mailto:investigadores.emergentes.ucn@gmail.com">investigadores.emergentes.ucn@gmail.com</a>
         </section>
       </main>
 

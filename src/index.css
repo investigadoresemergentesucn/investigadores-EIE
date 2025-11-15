@@ -15,10 +15,6 @@ code {
   letter-spacing: 0.02em;
 }
 
-.App-section h2 {
-  font-weight: 600;      /* slightly lighter */
-}
-
 p {
   font-weight: 400;      /* normal text */
 }
