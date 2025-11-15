@@ -7,13 +7,12 @@ html {
 .App-nav {
   position: absolute;
   top: 2rem;
-  right: auto;      /* distance from the right edge */
-  left: auto;       /* distance from the left edge */
-  
+  left: 50%;                 /* anchor in the middle */
+  transform: translateX(-50%); /* shift back by half its width */
 
   display: flex;
   justify-content: center;
-  gap: 2.5rem;        /* space between items */
+  gap: 2.5rem;
   padding: 1.2rem 0;
   font-size: 1rem;
   text-transform: uppercase;
@@ -135,19 +134,25 @@ body {
 }
 
 .App-description {
-  background: rgba(9, 23, 87, 0.97);
-  /* closer to page blue, but a bit darker */
+  background: rgba(5, 11, 51, 0.9);          /* un poco distinto al fondo */
+  border: 1px solid rgba(255, 255, 255, 0.12);
   color: #f5f5f5;
-  padding: 24px 32px;
-  max-width: 1000px;
-  margin: 40px auto 20px;  /* center + add space from header */
-  border-radius: 20px;
-  line-height: 1.6;
-  font-size: 1.1rem;
-  text-align: center;
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35); /* optional, for a soft “card” feel */
+  padding: 32px 40px;
+  max-width: 900px;                          /* un pelín más angosto que el main */
+  margin: 56px auto 32px;                    /* centrado + más respiro arriba/abajo */
+  border-radius: 24px;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  text-align: left;                          /* más natural para párrafos largos */
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.5);
+}
+.App-description p {
+  margin: 0 0 1rem;
 }
 
+.App-description p:last-child {
+  margin-bottom: 0;
+}
 
 .App-description a {
   color: #6cc3ff;
@@ -297,3 +302,24 @@ body {
 }
 
 
+.PersonCommittees {
+  margin-top: 0.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+  font-size: 0.75rem;
+}
+
+.CommitteeTag {
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.PersonRole {
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  color: #d7e3ff;
+}

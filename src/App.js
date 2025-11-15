@@ -241,68 +241,120 @@ function App() {
   <div className="Committee-president">
     <div className="PersonCard PersonCard--president">
       <img src={victoriaImg} alt="Victoria Acosta" />
-      <h4>Victoria Acosta</h4>
-      <p>Presidenta del comité · Doctorado en Física</p>
+  <h3>Victoria Acosta</h3>
+  <p>Doctorado en Física</p>
+  <p className="PersonCommittees">
+    <span className="CommitteeTag">Finanzas</span>
+    <span className="CommitteeTag">Logística</span>
+  </p>
+  <p className="PersonRole">
+    <strong>Presidenta del comité organizador</strong>
+  </p>
     </div>
   </div>
+
+  
 
   <h3>Equipo de comité</h3>
 
   {/* Grid for the rest of the student committee */}
   <div className="Committee-grid">
-        <div className="PersonCard">
-      <img src={macarenaImg} alt="Macarena López" />
-      <h4>Macarena López</h4>
-      <p>Magíster en Física</p>
-    </div>
+<div className="PersonCard">
+  <img src={macarenaImg} alt="Macarena López" className="PersonPhoto" />
+  <h3>Macarena López</h3>
+  <p>Magíster en Física</p>
+  <p className="PersonCommittees">
+    <span className="CommitteeTag">Comunicación</span>
+    <span className="CommitteeTag">Finanzas</span>
+  </p>
+  <p className="PersonRole"><strong>Representante de Finanzas</strong></p>
+</div>
 
-    <div className="PersonCard">
-      <img src={defaultPhoto} alt="Luis Miguel Galvis" />
-      <h4>Luis Miguel Galvis</h4>
-      <p>Magíster en Física</p>
-    </div>
 
-    <div className="PersonCard">
-      <img src={dianiImg} alt="Diany Reyes" />
-      <h4>Diany Reyes</h4>
-      <p>Magíster en Química</p>
-    </div>
+<div className="PersonCard">
+  <img src={defaultPhoto} alt="Luis Miguel Galvis" className="PersonPhoto" />
+  <h3>Luis Miguel Galvis</h3>
+  <p>Magíster en Física</p>
+  <p className="PersonCommittees">
+    <span className="CommitteeTag">Finanzas</span>
+  </p>
+</div>
 
-    <div className="PersonCard">
-      <img src={lucasImg} alt="Lucas Humanez" />
-      <h4>Lucas Humanez</h4>
-      <p>Magíster en Química</p>
-    </div>
+<div className="PersonCard">
+  <img src={dianiImg} alt="Diany Reyes" className="PersonPhoto" />
+  <h3>Diany Reyes</h3>
+  <p>Magíster en Química</p>
+  <p className="PersonCommittees">
+    <span className="CommitteeTag">Logística</span>
+  </p>
+</div>
 
-    <div className="PersonCard">
-      <img src={tatianaImg} alt="Tatiana Araya" />
-      <h4>Tatiana Araya</h4>
-      <p>Doctorado en Física</p>
-    </div>
+<div className="PersonCard">
+  <img src={lucasImg} alt="Lucas Humanez" className="PersonPhoto" />
+  <h3>Lucas Humanez</h3>
+  <p>Magíster en Química</p>
+  <p className="PersonCommittees">
+    <span className="CommitteeTag">Logística</span>
+    <span className="CommitteeTag">Científico</span>
+  </p>
+  <p className="PersonRole">
+    <strong>Representante de Logística</strong>
+  </p>
+</div>
 
-    <div className="PersonCard">
-      <img src={defaultPhoto} alt="Pablo Garrido" />
-      <h4>Pablo Garrido</h4>
-      <p>Magíster en Química</p>
-    </div>
+<div className="PersonCard">
+  <img src={tatianaImg} alt="Tatiana Araya" className="PersonPhoto" />
+  <h3>Tatiana Araya</h3>
+  <p>Doctorado en Física</p>
+  <p className="PersonCommittees">
+    <span className="CommitteeTag">Comunicación</span>
+    <span className="CommitteeTag">Logística</span>
+  </p>
+</div>
 
-    <div className="PersonCard">
-      <img src={bayronImg} alt="Bayron Micolta" />
-      <h4>Bayron Micolta</h4>
-      <p>Doctorado en Física</p>
-    </div>
+<div className="PersonCard">
+  <img src={defaultPhoto} alt="Pablo Garrido" className="PersonPhoto" />
+  <h3>Pablo Garrido</h3>
+  <p>Magíster en Química</p>
+  <p className="PersonCommittees">
+    <span className="CommitteeTag">Científico</span>
+  </p>
+</div>
 
-    <div className="PersonCard">
-      <img src={defaultPhoto} alt="Andrés Layana" />
-      <h4>Andrés Layana</h4>
-      <p>Doctorado en Física</p>
-    </div>
+<div className="PersonCard">
+  <img src={bayronImg} alt="Bayron Micolta" className="PersonPhoto" />
+  <h3>Bayron Micolta</h3>
+  <p>Doctorado en Física</p>
+  <p className="PersonCommittees">
+    <span className="CommitteeTag">Comunicación</span>
+  </p>
+  <p className="PersonRole">
+    <strong>Representante de Comunicación</strong>
+  </p>
+</div>
 
-    <div className="PersonCard">
-      <img src={ricardoImg} alt="Ricardo Zamora" />
-      <h4>Ricardo Zamora</h4>
-      <p>Magíster en Física</p>
-    </div>
+<div className="PersonCard">
+  <img src={defaultPhoto} alt="Andrés Layana" className="PersonPhoto" />
+  <h3>Andrés Layana</h3>
+  <p>Doctorado en Física</p>
+  <p className="PersonCommittees">
+    <span className="CommitteeTag">Logística</span>
+    <span className="CommitteeTag">Científico</span>
+  </p>
+  <p className="PersonRole">
+    <strong>Representante de Científico</strong>
+  </p>
+</div>
+
+<div className="PersonCard">
+  <img src={ricardoImg} alt="Ricardo Zamora" className="PersonPhoto" />
+  <h3>Ricardo Zamora</h3>
+  <p>Magíster en Física</p>
+  <p className="PersonCommittees">
+    <span className="CommitteeTag">Comunicación</span>
+    <span className="CommitteeTag">Científico</span>
+  </p>
+</div>
   </div>
 
     <h3>Responsables académicos</h3>
