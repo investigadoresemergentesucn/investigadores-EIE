@@ -95,6 +95,8 @@ body {
   background:
     radial-gradient(circle at center 100%, #1d3aa8 1%, #091757 55%, #050b33 100%);
 /*background-color: #091757;*/
+
+
   
 }
 
@@ -237,14 +239,14 @@ body {
   border-radius: 10px;
   padding: 10px 14px;
   border: 1px solid rgba(255,255,255,0.25);
-  background: #0f172a;
+  background: #18181f;
   color: #fff;
   text-decoration: none;
 }
 
 .btn.outline {
   background: transparent;
-  color: #fff;
+  color: #6cc3ff;
 }
 
 .App-section a {
@@ -387,7 +389,7 @@ body {
   margin-top: 0;
   margin-bottom: 0.75rem;
   font-size: 1.5rem;
-  color: #c7cfdd;
+  color: #c5d9fb;
 }
 
 .info-card p {
@@ -409,4 +411,5 @@ body {
   display: flex;
   gap: 0.6rem;
   flex-wrap: wrap;
+  justify-content: center;
 }

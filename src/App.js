@@ -151,45 +151,74 @@ function App() {
     formatos de póster, criterios de selección y detalles logísticos.
   </p>
 
-  <div className="info-grid">
-    {/* Inscripción */}
-    <div className="info-card info-card--wide">
-      <h3>Inscripción</h3>
-      <p>
-        La inscripción se realizará a través del siguiente enlace (por confirmar):{" "}
-        <a href="#" onClick={(e)=>e.preventDefault()}>Formulario Google</a>.
-        Completa tus datos y modalidad (<strong>charla</strong> o <strong>poster</strong>).
-      </p>
-      <ul>
-        <li>Recomendado: adjuntar el aval de tu director(a) si tu trabajo aún no está publicado.</li>
-        <li>Al confirmar tu inscripción recibirás un <strong>QR</strong> para el acceso el día del evento.</li>
-      </ul>
+<div className="info-grid">
+  {/* Inscripción */}
+  <div className="info-card info-card--wide">
+    <h3>Inscripción</h3>
+
+    <p>La inscripción se realizará a través del siguiente enlace:</p>
+
+    <div className="info-actions">
+      <a
+        className="btn outline"
+        href="#"
+        onClick={(e) => e.preventDefault()}>
+        Formulario de Inscripción
+      </a>
     </div>
+
+    <p>
+      Completa tus datos y modalidad (<strong>charla</strong> o <strong>poster</strong>).
+    </p>
+
+    <ul>
+      <li>
+        Recomendado: adjuntar el aval de tu director(a) si tu trabajo aún no está
+        publicado.
+      </li>
+      <li>
+        Al confirmar tu inscripción recibirás un <strong>QR</strong> para el acceso
+        el día del evento.
+      </li>
+    </ul>
+  </div>
 
     {/* Resumen (abstract) */}
     <div className="info-card">
       <h3>Resumen (abstract)</h3>
       <ul>
-        <li>Extensión sugerida: 150–250 palabras (máx. 1 figura opcional).</li>
+        <li>Extensión sugerida: 1 pagina (máx. 1 figura opcional).</li>
         <li>Formato: título, autores/afiliaciones, palabras clave.</li>
-        <li>Archivo (opcional): PDF o DOCX. Nombre: <code>Apellido_PrimeraPalabraDelTítulo.pdf</code></li>
+        <li>Archivo: PDF o DOCX. Nombre: <code>Apellido_PrimeraPalabraDelTítulo.pdf</code></li>
       </ul>
+           <div className="info-actions">
+  <a className="btn outline" href="https://drive.google.com/drive/folders/186Y5UYYzaImcDYplM_p4Sz-DhRBZUece?usp=sharing" target="_blank" rel="noreferrer">Formato de Resumen</a>
+</div>
     </div>
 
-    {/* Modalidades y tiempos */}
+        {/* Criterios y selección */}
     <div className="info-card">
-      <h3>Modalidades y tiempos</h3>
+      <h3>Criterios y selección</h3>
+      <p>
+        Prioridad a <strong>investigadores/as emergentes</strong> con resultados en curso o próximos a publicación.
+        La asignación charla/poster se hará con base en una <strong>rúbrica</strong> de calidad, avance,
+        claridad e interdisciplinariedad (versión final por publicar).
+      </p>
       <ul>
-        <li><strong>Charlas</strong>: 15 min + 5 min preguntas.</li>
-        <li><strong>Posters</strong>: sesión dedicada con recorrido de evaluadores.</li>
-        <li><strong>Plenarias</strong>: por invitación de los departamentos (por confirmar).</li>
+        <li>Notificación de aceptación: (por confirmar fecha).</li>
+        <li>Se entregarán certificados de participación/ponencia (por confirmar).</li>
       </ul>
+            <div className="info-actions">
+        <a className="btn outline" href="#" onClick={(e)=>e.preventDefault()}>Bases (PDF)</a>
+      </div>
     </div>
+
+
 
     {/* Posters: dimensiones (por confirmar) */}
     <div className="info-card info-card--wide">
       <h3>Posters — dimensiones y formato</h3>
-      <p>(Por confirmar con logística). Sugerencia base para que puedas diseñar desde ya:</p>
+      <p>Sugerencia base para que puedas diseñar desde ya:</p>
 <div className="App-tableWrapper">
   <table className="App-table">
     <thead>
@@ -212,22 +241,18 @@ function App() {
 </div>
 
       <ul>
-        <li>Incluye logo de la UCN y tu programa/centro (si corresponde).</li>
+        <li>Incluye logo de la UCN, EIE y tu programa/centro (si corresponde).</li>
         <li>Tip: títulos legibles.</li>
       </ul>
     </div>
 
-    {/* Criterios y selección */}
+    {/* Modalidades y tiempos */}
     <div className="info-card">
-      <h3>Criterios y selección</h3>
-      <p>
-        Prioridad a <strong>investigadores/as emergentes</strong> con resultados en curso o próximos a publicación.
-        La asignación charla/poster se hará con base en una <strong>rúbrica</strong> de calidad, avance,
-        claridad e interdisciplinariedad (versión final por publicar).
-      </p>
+      <h3>Modalidades y tiempos</h3>
       <ul>
-        <li>Notificación de aceptación: (por confirmar fecha).</li>
-        <li>Se entregarán certificados de participación/ponencia (por confirmar).</li>
+        <li><strong>Charlas</strong>: 15 min + 5 min preguntas.</li>
+        <li><strong>Posters</strong>: sesión dedicada con recorrido de evaluadores.</li>
+        <li><strong>Plenarias</strong>: por invitación de los departamentos (por confirmar).</li>
       </ul>
     </div>
 
@@ -236,16 +261,10 @@ function App() {
       <h3>Logística rápida</h3>
       <ul>
         <li>Registro con <strong>QR</strong> en el acceso.</li>
-        <li>Coffee/snacks: (por confirmar proveedor). </li>
+        <li>Coffee/snacks. </li>
         <li>Soporte audiovisual: proyector HDMI; lleva tu adaptador si usas USB-C/DisplayPort.</li>
-        <li>Wi-Fi UCN: (por confirmar SSID/sala).</li>
-        <li>Fotografía: cobertura por Bayron (consentimiento de imagen implícito en el registro).</li>
         <li>Código de conducta: respeto, inclusión y trato profesional en todas las actividades.</li>
       </ul>
-      <div className="info-actions">
-        <a className="btn" href="#" onClick={(e)=>e.preventDefault()}>Formulario de inscripción</a>
-        <a className="btn outline" href="#" onClick={(e)=>e.preventDefault()}>Bases (PDF)</a>
-      </div>
     </div>
   </div>
 </section>
