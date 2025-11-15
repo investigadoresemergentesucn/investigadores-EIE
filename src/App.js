@@ -55,8 +55,8 @@ function App() {
           className="App-logo"
           alt="Logo EIE" 
         />
-        <h1>Encuentro de Investigadores Emergentes</h1>
-        <p>Facultad de Ciencias — Universidad Católica del Norte</p>
+        <h1 className="App-title">Encuentro de Investigadores Emergentes</h1>
+        <p className="App-subtitle">Facultad de Ciencias — Universidad Católica del Norte</p>
       </header>
 
       
@@ -100,6 +100,7 @@ function App() {
             Los horarios y charlas serán confirmados próximamente.
           </p>
 
+<div className="App-tableWrapper">
           <table className="App-table">
             <thead>
               <tr>
@@ -139,99 +140,116 @@ function App() {
               </tr>
             </tbody>
           </table>
+          </div>
         </section>
 
                 {/* --- Sección 4: Información general / FAQ --- */}
-        <section id="informacion" className="App-section">
-          <h2>ℹ️ Información general / FAQ</h2>
+<section id="informacion" className="App-section">
+  <h2>ℹ️ Información general / FAQ</h2>
+  <p className="Section-intro">
+    Aquí encontrarás lo esencial para participar: inscripción, envío de resumen,
+    formatos de póster, criterios de selección y detalles logísticos.
+  </p>
 
-          {/* Inscripción */}
-          <div className="info-card">
-            <h3>Inscripción</h3>
-            <p>
-              La inscripción se realizará a través del siguiente enlace (por confirmar):{" "}
-              <a href="#" onClick={(e)=>e.preventDefault()}>Formulario Google</a>.
-              Completa tus datos y modalidad (<strong>charla</strong> o <strong>poster</strong>).
-            </p>
-            <ul>
-              <li>Recomendado: adjuntar el aval de tu director(a) si tu trabajo aún no está publicado.</li>
-              <li>Al confirmar tu inscripción recibirás un <strong>QR</strong> para el acceso el día del evento.</li>
-            </ul>
-          </div>
+  <div className="info-grid">
+    {/* Inscripción */}
+    <div className="info-card info-card--wide">
+      <h3>Inscripción</h3>
+      <p>
+        La inscripción se realizará a través del siguiente enlace (por confirmar):{" "}
+        <a href="#" onClick={(e)=>e.preventDefault()}>Formulario Google</a>.
+        Completa tus datos y modalidad (<strong>charla</strong> o <strong>poster</strong>).
+      </p>
+      <ul>
+        <li>Recomendado: adjuntar el aval de tu director(a) si tu trabajo aún no está publicado.</li>
+        <li>Al confirmar tu inscripción recibirás un <strong>QR</strong> para el acceso el día del evento.</li>
+      </ul>
+    </div>
 
-          {/* Resumen (abstract) */}
-          <div className="info-card">
-            <h3>Resumen (abstract)</h3>
-            <ul>
-              <li>Extensión sugerida: 150–250 palabras (máx. 1 figura opcional).</li>
-              <li>Formato: título, autores/afiliaciones, palabras clave.</li>
-              <li>Archivo (opcional): PDF o DOCX. Nombre: <code>Apellido_PrimeraPalabraDelTítulo.pdf</code></li>
-            </ul>
-          </div>
+    {/* Resumen (abstract) */}
+    <div className="info-card">
+      <h3>Resumen (abstract)</h3>
+      <ul>
+        <li>Extensión sugerida: 150–250 palabras (máx. 1 figura opcional).</li>
+        <li>Formato: título, autores/afiliaciones, palabras clave.</li>
+        <li>Archivo (opcional): PDF o DOCX. Nombre: <code>Apellido_PrimeraPalabraDelTítulo.pdf</code></li>
+      </ul>
+    </div>
 
-          {/* Modalidades y tiempos */}
-          <div className="info-card">
-            <h3>Modalidades y tiempos</h3>
-            <ul>
-              <li><strong>Charlas</strong>: 15 min + 5 min preguntas.</li>
-              <li><strong>Posters</strong>: sesión dedicada con recorrido de evaluadores.</li>
-              <li><strong>Plenarias</strong>: por invitación de los departamentos (por confirmar).</li>
-            </ul>
-          </div>
+    {/* Modalidades y tiempos */}
+    <div className="info-card">
+      <h3>Modalidades y tiempos</h3>
+      <ul>
+        <li><strong>Charlas</strong>: 15 min + 5 min preguntas.</li>
+        <li><strong>Posters</strong>: sesión dedicada con recorrido de evaluadores.</li>
+        <li><strong>Plenarias</strong>: por invitación de los departamentos (por confirmar).</li>
+      </ul>
+    </div>
 
-          {/* Posters: dimensiones (por confirmar) */}
-          <div className="info-card">
-            <h3>Posters — dimensiones y formato</h3>
-            <p>(Por confirmar con logística). Sugerencia base para que puedas diseñar desde ya:</p>
-            <table className="App-table">
-              <thead>
-                <tr>
-                  <th>Tamaño</th><th>Orientación</th><th>Formato</th><th>Impresión</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>A0 (841 × 1189 mm)</td><td>Vertical</td><td>PDF/PNG alta resolución</td><td>Color</td>
-                </tr>
-              </tbody>
-            </table>
-            <ul>
-              <li>Incluye logo de la UCN y tu programa/centro (si corresponde).</li>
-              <li>Tip: títulos legibles.</li>
-            </ul>
-          </div>
+    {/* Posters: dimensiones (por confirmar) */}
+    <div className="info-card info-card--wide">
+      <h3>Posters — dimensiones y formato</h3>
+      <p>(Por confirmar con logística). Sugerencia base para que puedas diseñar desde ya:</p>
+<div className="App-tableWrapper">
+  <table className="App-table">
+    <thead>
+      <tr>
+        <th>Tamaño</th>
+        <th>Orientación</th>
+        <th>Formato</th>
+        <th>Impresión</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>A0 (841 × 1189 mm)</td>
+        <td>Vertical</td>
+        <td>PDF/PNG alta resolución</td>
+        <td>Color</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-          {/* Criterios y selección */}
-          <div className="info-card">
-            <h3>Criterios y selección</h3>
-            <p>
-              Prioridad a <strong>investigadores/as emergentes</strong> con resultados en curso o próximos a publicación.
-              La asignación charla/poster se hará con base en una <strong>rúbrica</strong> de calidad, avance,
-              claridad e interdisciplinariedad (versión final por publicar).
-            </p>
-            <ul>
-              <li>Notificación de aceptación: (por confirmar fecha).</li>
-              <li>Se entregarán certificados de participación/ponencia (por confirmar).</li>
-            </ul>
-          </div>
+      <ul>
+        <li>Incluye logo de la UCN y tu programa/centro (si corresponde).</li>
+        <li>Tip: títulos legibles.</li>
+      </ul>
+    </div>
 
-          {/* Logística rápida */}
-          <div className="info-card">
-            <h3>Logística rápida</h3>
-            <ul>
-              <li>Registro con <strong>QR</strong> en el acceso.</li>
-              <li>Coffee/snacks: (por confirmar proveedor). </li>
-              <li>Soporte audiovisual: proyector HDMI; lleva tu adaptador si usas USB-C/DisplayPort.</li>
-              <li>Wi-Fi UCN: (por confirmar SSID/sala).</li>
-              <li>Fotografía: cobertura por Bayron (consentimiento de imagen implícito en el registro).</li>
-              <li>Código de conducta: respeto, inclusión y trato profesional en todas las actividades.</li>
-            </ul>
-            <div style={{marginTop: 12, display: "flex", gap: 10, flexWrap: "wrap"}}>
-              <a className="btn" href="#" onClick={(e)=>e.preventDefault()}>Formulario de inscripción</a> {/*reemplazar # por el link y eliminar "onClick={(e)=>e.preventDefault()}" cuando esté listo, LO MISMO CON TODOS LOS OTROS LINKS*/}
-              <a className="btn outline" href="#" onClick={(e)=>e.preventDefault()}>Bases (PDF)</a>
-            </div>
-          </div>
-        </section>
+    {/* Criterios y selección */}
+    <div className="info-card">
+      <h3>Criterios y selección</h3>
+      <p>
+        Prioridad a <strong>investigadores/as emergentes</strong> con resultados en curso o próximos a publicación.
+        La asignación charla/poster se hará con base en una <strong>rúbrica</strong> de calidad, avance,
+        claridad e interdisciplinariedad (versión final por publicar).
+      </p>
+      <ul>
+        <li>Notificación de aceptación: (por confirmar fecha).</li>
+        <li>Se entregarán certificados de participación/ponencia (por confirmar).</li>
+      </ul>
+    </div>
+
+    {/* Logística rápida */}
+    <div className="info-card">
+      <h3>Logística rápida</h3>
+      <ul>
+        <li>Registro con <strong>QR</strong> en el acceso.</li>
+        <li>Coffee/snacks: (por confirmar proveedor). </li>
+        <li>Soporte audiovisual: proyector HDMI; lleva tu adaptador si usas USB-C/DisplayPort.</li>
+        <li>Wi-Fi UCN: (por confirmar SSID/sala).</li>
+        <li>Fotografía: cobertura por Bayron (consentimiento de imagen implícito en el registro).</li>
+        <li>Código de conducta: respeto, inclusión y trato profesional en todas las actividades.</li>
+      </ul>
+      <div className="info-actions">
+        <a className="btn" href="#" onClick={(e)=>e.preventDefault()}>Formulario de inscripción</a>
+        <a className="btn outline" href="#" onClick={(e)=>e.preventDefault()}>Bases (PDF)</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
 <section id="comite" className="App-section">

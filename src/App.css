@@ -3,6 +3,24 @@ html {
   scroll-behavior: smooth;
 }
 
+.App-title {
+  margin-bottom: 2rem;
+
+  /* soft gradient text instead of flat white */
+  background: linear-gradient(100deg, #ff8dee, #a5e6ff);
+  background-clip: text;
+  color: transparent;
+
+  text-shadow: 0 10px 40px rgba(0, 0, 0, 0);
+}
+
+.App-subtitle {
+  font-size: 1.05rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
 /* Top navigation bar */
 .App-nav {
   position: absolute;
@@ -75,7 +93,7 @@ body {
   color: white;
 
   background:
-    radial-gradient(circle at center 20%, #1d3aa8 0, #091757 55%, #050b33 100%);
+    radial-gradient(circle at center 100%, #1d3aa8 1%, #091757 55%, #050b33 100%);
 /*background-color: #091757;*/
   
 }
@@ -163,50 +181,49 @@ body {
   text-decoration: underline;
 }
 
+.App-tableWrapper {
+  margin-top: 0.75rem;
+  border-radius: 10px;
+  overflow: hidden; /* recorta las esquinas de la tabla */
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
 .App-table {
   width: 100%;
-  max-width: 900px;
-  margin: 20px auto;
   border-collapse: collapse;
-  background-color: rgba(255, 255, 255, 0.05);
-  color: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  font-size: 0.95em;
 }
 
 .App-table th,
 .App-table td {
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 12px 10px;
-  text-align: center;
+  padding: 0.7rem 0.9rem;
+  text-align: left;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.App-table th {
-  background-color: rgba(255, 255, 255, 0.1);
-  font-weight: bold;
-  color: #c7e0ff;
+.App-table thead th {
+  background: rgba(20, 40, 110, 0.95);
+  font-weight: 600;
 }
 
-.App-table tr:nth-child(even) {
-  background-color: rgba(255, 255, 255, 0.04);
+.App-table tbody td {
+  background: rgba(8, 24, 90, 0.9);
+}
+
+/* quitar borde extra en la última fila */
+.App-table tbody tr:last-child td {
+  border-bottom: none;
 }
 
 
-.info-card {
-  background-color: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 10px;
-  padding: 18px;
-  margin: 18px auto;
-  max-width: 900px;
-  color: #f0f3ff;
-}
+
+
 
 .info-card h3 {
   margin-top: 0;
   margin-bottom: 8px;
   color: #cfe6ff;
+  text-align:center;
 }
 
 .info-card ul {
@@ -322,4 +339,74 @@ body {
   margin-top: 0.3rem;
   font-size: 0.8rem;
   color: #d7e3ff;
+}
+
+
+/* Intro pequeña debajo de h2 en secciones largas */
+.Section-intro {
+  max-width: 720px;
+  margin: 0 auto 1.8rem;
+  font-size: 0.98rem;
+  opacity: 0.9;
+  text-align: center;
+}
+
+/* Layout del FAQ */
+#informacion .info-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* En escritorio: dos columnas */
+@media (min-width: 900px) {
+  #informacion .info-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+  }
+
+  #informacion .info-card--wide {
+    grid-column: 1 / -1;  /* ocupa las dos columnas */
+  }
+}
+
+
+/* Tarjetas de info (puedes adaptar a tu paleta actual) */
+.info-card {
+  padding: 20px 24px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(6, 34, 71, 0.274);
+  background: rgba(49, 51, 72, 0.222);
+  border-radius: 18px;
+  margin: 18px auto;
+  max-width: 900px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.info-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  color: #c7cfdd;
+}
+
+.info-card p {
+  margin-bottom: 0.7rem;
+}
+
+.info-card ul {
+  margin: 0.4rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.info-card li {
+  margin-bottom: 0.25rem;
+}
+
+/* Botones al final de la última tarjeta */
+.info-actions {
+  margin-top: 0.9rem;
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
 }
