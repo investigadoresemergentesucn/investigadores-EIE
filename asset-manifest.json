@@ -1,22 +1,26 @@
 {
   "files": {
-    "main.css": "/investigadores-EIE/static/css/main.9405a3cf.css",
-    "main.js": "/investigadores-EIE/static/js/main.d8ccf30e.js",
+    "main.css": "/investigadores-EIE/static/css/main.861d0ecb.css",
+    "main.js": "/investigadores-EIE/static/js/main.38d1c79b.js",
     "static/js/453.62a51843.chunk.js": "/investigadores-EIE/static/js/453.62a51843.chunk.js",
+    "static/media/Lucas H.jpeg": "/investigadores-EIE/static/media/Lucas H.ff4b7de2e98bb2c5f209.jpeg",
+    "static/media/tatiana.JPG": "/investigadores-EIE/static/media/tatiana.29961eca6900a2b0be0d.JPG",
     "static/media/eie-logo-removebg.png": "/investigadores-EIE/static/media/eie-logo-removebg.991babad651813c0c809.png",
     "static/media/logo.png": "/investigadores-EIE/static/media/logo.29e625b81f34023b7e21.png",
+    "static/media/Bayron.jpg": "/investigadores-EIE/static/media/Bayron.872cdcb56191fb95d21b.jpg",
     "static/media/victoria.jpeg": "/investigadores-EIE/static/media/victoria.e2094f79af86ae5c3916.jpeg",
     "static/media/ricardo.jpeg": "/investigadores-EIE/static/media/ricardo.0ddd967430fa5e94f104.jpeg",
     "static/media/Escudo-UCN-Logo.png": "/investigadores-EIE/static/media/Escudo-UCN-Logo.af50265e5c2878e39414.png",
     "static/media/macarena.jpeg": "/investigadores-EIE/static/media/macarena.230779ea9cde7a4155d8.jpeg",
+    "static/media/Diany.JPG": "/investigadores-EIE/static/media/Diany.8ce2bc237c30d51ee704.JPG",
     "static/media/cesarbonilla.jpg": "/investigadores-EIE/static/media/cesarbonilla.69f240082dd960e1a3e3.jpg",
     "index.html": "/investigadores-EIE/index.html",
-    "main.9405a3cf.css.map": "/investigadores-EIE/static/css/main.9405a3cf.css.map",
-    "main.d8ccf30e.js.map": "/investigadores-EIE/static/js/main.d8ccf30e.js.map",
+    "main.861d0ecb.css.map": "/investigadores-EIE/static/css/main.861d0ecb.css.map",
+    "main.38d1c79b.js.map": "/investigadores-EIE/static/js/main.38d1c79b.js.map",
     "453.62a51843.chunk.js.map": "/investigadores-EIE/static/js/453.62a51843.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9405a3cf.css",
-    "static/js/main.d8ccf30e.js"
+    "static/css/main.861d0ecb.css",
+    "static/js/main.38d1c79b.js"
   ]
 }
