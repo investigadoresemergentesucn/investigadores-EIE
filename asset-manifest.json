@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/investigadores-EIE/static/css/main.55da25f2.css",
-    "main.js": "/investigadores-EIE/static/js/main.26a10b1d.js",
+    "main.js": "/investigadores-EIE/static/js/main.2fd066d1.js",
     "static/js/453.62a51843.chunk.js": "/investigadores-EIE/static/js/453.62a51843.chunk.js",
     "static/media/Lucas H.jpeg": "/investigadores-EIE/static/media/Lucas H.ff4b7de2e98bb2c5f209.jpeg",
     "static/media/tatiana.JPG": "/investigadores-EIE/static/media/tatiana.29961eca6900a2b0be0d.JPG",
@@ -11,17 +11,18 @@
     "static/media/Bayron.jpg": "/investigadores-EIE/static/media/Bayron.872cdcb56191fb95d21b.jpg",
     "static/media/victoria.jpeg": "/investigadores-EIE/static/media/victoria.e2094f79af86ae5c3916.jpeg",
     "static/media/ricardo.jpeg": "/investigadores-EIE/static/media/ricardo.0ddd967430fa5e94f104.jpeg",
-    "static/media/Escudo-UCN-Logo.png": "/investigadores-EIE/static/media/Escudo-UCN-Logo.af50265e5c2878e39414.png",
+    "static/media/logocienciasbasicas.png": "/investigadores-EIE/static/media/logocienciasbasicas.04e1e3d9a402b62288ce.png",
+    "static/media/Escudo-UCN-Logo.png": "/investigadores-EIE/static/media/Escudo-UCN-Logo.36bbacc83a9c2b0206c2.png",
     "static/media/macarena.jpeg": "/investigadores-EIE/static/media/macarena.230779ea9cde7a4155d8.jpeg",
     "static/media/Diany.JPG": "/investigadores-EIE/static/media/Diany.8ce2bc237c30d51ee704.JPG",
     "static/media/cesarbonilla.jpg": "/investigadores-EIE/static/media/cesarbonilla.69f240082dd960e1a3e3.jpg",
     "index.html": "/investigadores-EIE/index.html",
     "main.55da25f2.css.map": "/investigadores-EIE/static/css/main.55da25f2.css.map",
-    "main.26a10b1d.js.map": "/investigadores-EIE/static/js/main.26a10b1d.js.map",
+    "main.2fd066d1.js.map": "/investigadores-EIE/static/js/main.2fd066d1.js.map",
     "453.62a51843.chunk.js.map": "/investigadores-EIE/static/js/453.62a51843.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.55da25f2.css",
-    "static/js/main.26a10b1d.js"
+    "static/js/main.2fd066d1.js"
   ]
 }
