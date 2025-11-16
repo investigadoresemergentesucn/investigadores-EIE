@@ -16,6 +16,7 @@ import bayronImg from './comite/Bayron.jpg';
 import dianiImg from './comite/Diany.JPG';
 import lucasImg from './comite/Lucas H.jpeg';
 import tatianaImg from './comite/tatiana.JPG';
+import luisGImg from './comite/Luis.jpeg';
 
 import './App.css';
 
@@ -206,7 +207,7 @@ function App() {
       </p>
       <ul>
         <li>Notificación de aceptación: (por confirmar fecha).</li>
-        <li>Se entregarán certificados de participación/ponencia (por confirmar).</li>
+        <li>Se entregarán certificados de participación/ponencia.</li>
       </ul>
             <div className="info-actions">
         <a className="btn outline" href="#" onClick={(e)=>e.preventDefault()}>Bases (PDF)</a>
@@ -309,7 +310,7 @@ function App() {
 
 
 <div className="PersonCard">
-  <img src={defaultPhoto} alt="Luis Miguel Galvis" className="PersonPhoto" />
+  <img src={luisGImg} alt="Luis Miguel Galvis" className="PersonPhoto" />
   <h3>Luis Miguel Galvis</h3>
   <p>Magíster en Física</p>
   <p className="PersonCommittees">
