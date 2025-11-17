@@ -190,7 +190,7 @@ function App() {
       <ul>
         <li>Extensión sugerida: 1 pagina (máx. 1 figura opcional).</li>
         <li>Formato: título, autores/afiliaciones, palabras clave.</li>
-        <li>Archivo: PDF o DOCX. Nombre: <code>Apellido_PrimeraPalabraDelTítulo.pdf</code></li>
+        <li>Archivo: .PDF con nombre <code>Apellido_PrimeraPalabraDelTítulo.pdf</code></li>
       </ul>
            <div className="info-actions">
   <a className="btn outline" href="https://drive.google.com/drive/folders/186Y5UYYzaImcDYplM_p4Sz-DhRBZUece?usp=sharing" target="_blank" rel="noreferrer">Formato de Resumen</a>
@@ -348,6 +348,9 @@ function App() {
     <span className="CommitteeTag">Comunicación</span>
     <span className="CommitteeTag">Logística</span>
   </p>
+    <p className="PersonRole">
+    <strong>Representante de Comunicación</strong>
+  </p>
 </div>
 
 <div className="PersonCard">
@@ -365,9 +368,6 @@ function App() {
   <p>Doctorado en Física</p>
   <p className="PersonCommittees">
     <span className="CommitteeTag">Comunicación</span>
-  </p>
-  <p className="PersonRole">
-    <strong>Representante de Comunicación</strong>
   </p>
 </div>
 
@@ -435,6 +435,11 @@ function App() {
       style={{height:50, width:"auto"}}
     />
     <p>© 2026 Investigadores Emergentes — Facultad de Ciencias UCN</p>
+        <img
+      src={require('./logocienciasbasicas.png')}
+      alt="Logo UCN"
+      style={{height:50, width:"auto"}}
+    />
   </div>
 </footer>
 
