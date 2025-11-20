@@ -17,6 +17,7 @@ import dianiImg from './comite/Diany.JPG';
 import lucasImg from './comite/Lucas H.jpeg';
 import tatianaImg from './comite/tatiana.JPG';
 import luisGImg from './comite/Luis.jpeg';
+import andresImg from './comite/Andres.png';
 
 import './App.css';
 
@@ -372,7 +373,7 @@ function App() {
 </div>
 
 <div className="PersonCard">
-  <img src={defaultPhoto} alt="Andrés Layana" className="PersonPhoto" />
+  <img src={andresImg} alt="Andrés Layana" className="PersonPhoto" />
   <h3>Andrés Layana</h3>
   <p>Doctorado en Física</p>
   <p className="PersonCommittees">
