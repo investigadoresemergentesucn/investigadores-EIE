@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/investigadores-EIE/static/css/main.55da25f2.css",
-    "main.js": "/investigadores-EIE/static/js/main.b3fcac7e.js",
+    "main.js": "/investigadores-EIE/static/js/main.c84e1b0c.js",
     "static/js/453.62a51843.chunk.js": "/investigadores-EIE/static/js/453.62a51843.chunk.js",
-    "static/media/Andres.png": "/investigadores-EIE/static/media/Andres.91d5502c7a74164c946f.png",
     "static/media/Lucas H.jpeg": "/investigadores-EIE/static/media/Lucas H.ff4b7de2e98bb2c5f209.jpeg",
     "static/media/tatiana.JPG": "/investigadores-EIE/static/media/tatiana.29961eca6900a2b0be0d.JPG",
     "static/media/Luis.jpeg": "/investigadores-EIE/static/media/Luis.51d4094ec26e4cae958a.jpeg",
@@ -19,11 +18,11 @@
     "static/media/cesarbonilla.jpg": "/investigadores-EIE/static/media/cesarbonilla.69f240082dd960e1a3e3.jpg",
     "index.html": "/investigadores-EIE/index.html",
     "main.55da25f2.css.map": "/investigadores-EIE/static/css/main.55da25f2.css.map",
-    "main.b3fcac7e.js.map": "/investigadores-EIE/static/js/main.b3fcac7e.js.map",
+    "main.c84e1b0c.js.map": "/investigadores-EIE/static/js/main.c84e1b0c.js.map",
     "453.62a51843.chunk.js.map": "/investigadores-EIE/static/js/453.62a51843.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.55da25f2.css",
-    "static/js/main.b3fcac7e.js"
+    "static/js/main.c84e1b0c.js"
   ]
 }
