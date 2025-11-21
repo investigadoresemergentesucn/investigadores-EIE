@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.55da25f2.css",
-    "main.js": "./static/js/main.fa5a53b2.js",
+    "main.css": "./static/css/main.d746c5bc.css",
+    "main.js": "./static/js/main.2115d14c.js",
     "static/js/453.62a51843.chunk.js": "./static/js/453.62a51843.chunk.js",
     "static/media/Lucas H.jpeg": "./static/media/Lucas H.ff4b7de2e98bb2c5f209.jpeg",
     "static/media/tatiana.JPG": "./static/media/tatiana.29961eca6900a2b0be0d.JPG",
@@ -16,14 +16,15 @@
     "static/media/Escudo-UCN-Logo.png": "./static/media/Escudo-UCN-Logo.36bbacc83a9c2b0206c2.png",
     "static/media/macarena.jpeg": "./static/media/macarena.230779ea9cde7a4155d8.jpeg",
     "static/media/Diany.JPG": "./static/media/Diany.8ce2bc237c30d51ee704.JPG",
+    "static/media/pablo.jpg": "./static/media/pablo.f4baf6bc6580ca07f0ef.jpg",
     "static/media/cesarbonilla.jpg": "./static/media/cesarbonilla.69f240082dd960e1a3e3.jpg",
     "index.html": "./index.html",
-    "main.55da25f2.css.map": "./static/css/main.55da25f2.css.map",
-    "main.fa5a53b2.js.map": "./static/js/main.fa5a53b2.js.map",
+    "main.d746c5bc.css.map": "./static/css/main.d746c5bc.css.map",
+    "main.2115d14c.js.map": "./static/js/main.2115d14c.js.map",
     "453.62a51843.chunk.js.map": "./static/js/453.62a51843.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.55da25f2.css",
-    "static/js/main.fa5a53b2.js"
+    "static/css/main.d746c5bc.css",
+    "static/js/main.2115d14c.js"
   ]
 }
