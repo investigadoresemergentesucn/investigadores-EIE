@@ -17,7 +17,8 @@ import dianiImg from './comite/Diany.JPG';
 import lucasImg from './comite/Lucas H.jpeg';
 import tatianaImg from './comite/tatiana.JPG';
 import luisGImg from './comite/Luis.jpeg';
-import andresImg from './comite/Andres.png';
+import andresImg from './comite/Andres.jpg';
+import pabloImg from './comite/pablo.jpg';
 
 import './App.css';
 
@@ -69,7 +70,7 @@ function App() {
           El <strong>Encuentro de Investigadores Emergentes (EIE)</strong> es una iniciativa 
           organizada por estudiantes de postgrado de la 
           <a href="https://www.ucn.cl/" target="_blank" rel="noreferrer"> Universidad Católica del Norte (UCN)</a>,
-          Facultad de Ciencias Básicas. Su objetivo es crear un espacio donde jóvenes investigadores 
+          Facultad de Ciencias. Su objetivo es crear un espacio donde jóvenes investigadores 
           puedan compartir sus avances, resultados y proyectos en desarrollo.
         </p>
 
@@ -87,10 +88,37 @@ function App() {
 
       {/* ====================== MAIN ====================== */}
       <main className="App-main">
-        <section id="fecha" className="App-section">
-          <h2>📅 Fechas y lugar</h2>
-          <p>6–7 de enero de 2026 · Auditorio (por confirmar)</p>
-        </section>
+<section id="fecha" className="App-section App-section--dates">
+  <div className="dates-header">
+    <span className="dates-header__icon">📅</span>
+    <div>
+      <h2>Fechas y lugar</h2>
+      <p className="dates-header__subtitle">
+        UCN · Salas K
+      </p>
+    </div>
+  </div>
+
+  <div className="dates-grid">
+    <article className="date-card">
+      <span className="date-card__label">Evento</span>
+      <p className="date-card__main">6–7 de enero de 2026</p>
+      <p className="date-card__extra">Auditorio</p>
+    </article>
+
+    <article className="date-card">
+      <span className="date-card__label">Envío de resumen</span>
+      <p className="date-card__main">10 de diciembre 2025</p>
+      <p className="date-card__extra">Hasta las 23:59 (CLT)</p>
+    </article>
+
+    <article className="date-card">
+      <span className="date-card__label">Aviso de aceptación</span>
+      <p className="date-card__main">19 de diciembre 2025</p>
+      <p className="date-card__extra">Vía correo electrónico</p>
+    </article>
+  </div>
+</section>
 
 
 
@@ -163,8 +191,7 @@ function App() {
     <div className="info-actions">
       <a
         className="btn outline"
-        href="#"
-        onClick={(e) => e.preventDefault()}>
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdFztHRv2FsyHQy_QtwZHNG4HPqPF8-vfaVhpbaWCh58HOTYQ/viewform?usp=header">
         Formulario de Inscripción
       </a>
     </div>
@@ -191,29 +218,30 @@ function App() {
       <ul>
         <li>Extensión sugerida: 1 pagina (máx. 1 figura opcional).</li>
         <li>Formato: título, autores/afiliaciones, palabras clave.</li>
-        <li>Archivo: .PDF con nombre <code>Apellido_PrimeraPalabraDelTítulo.pdf</code></li>
+        <li>Archivo: .PDF con nombre <code>Nombre_Apellido_Area.pdf</code></li>
       </ul>
            <div className="info-actions">
   <a className="btn outline" href="https://drive.google.com/drive/folders/186Y5UYYzaImcDYplM_p4Sz-DhRBZUece?usp=sharing" target="_blank" rel="noreferrer">Formato de Resumen</a>
 </div>
     </div>
 
-        {/* Criterios y selección */}
-    <div className="info-card">
-      <h3>Criterios y selección</h3>
-      <p>
-        Prioridad a <strong>investigadores/as emergentes</strong> con resultados en curso o próximos a publicación.
-        La asignación charla/poster se hará con base en una <strong>rúbrica</strong> de calidad, avance,
-        claridad e interdisciplinariedad (versión final por publicar).
-      </p>
-      <ul>
-        <li>Notificación de aceptación: (por confirmar fecha).</li>
-        <li>Se entregarán certificados de participación/ponencia.</li>
-      </ul>
-            <div className="info-actions">
-        <a className="btn outline" href="#" onClick={(e)=>e.preventDefault()}>Bases (PDF)</a>
-      </div>
-    </div>
+{/* Imágenes que se deben colocar en los pósters y presentaciones */}
+<div className="info-card">
+  <h3>Logos oficiales</h3>
+  <p>
+    Descarga los logotipos oficiales del Encuentro para usarlos en tus pósters
+    y presentaciones.
+  </p>
+  <div className="info-actions">
+    <a
+      className="btn outline"
+      href="https://drive.google.com/drive/u/2/folders/11Lmlvi9CRkvtegbmGrgREhgFIoXj7pvm"
+    >
+      Descargar logos
+    </a>
+  </div>
+</div>
+
 
 
 
@@ -243,8 +271,7 @@ function App() {
 </div>
 
       <ul>
-        <li>Incluye logo de la UCN, EIE y tu programa/centro (si corresponde).</li>
-        <li>Tip: títulos legibles.</li>
+        <li>Incluir logo de la Facultad de Ciencias de la UCN, EIE y tu programa/centro (si corresponde).</li>
       </ul>
     </div>
 
@@ -263,7 +290,6 @@ function App() {
       <h3>Logística rápida</h3>
       <ul>
         <li>Registro con <strong>QR</strong> en el acceso.</li>
-        <li>Coffee/snacks. </li>
         <li>Soporte audiovisual: proyector HDMI; lleva tu adaptador si usas USB-C/DisplayPort.</li>
         <li>Código de conducta: respeto, inclusión y trato profesional en todas las actividades.</li>
       </ul>
@@ -355,7 +381,7 @@ function App() {
 </div>
 
 <div className="PersonCard">
-  <img src={defaultPhoto} alt="Pablo Garrido" className="PersonPhoto" />
+  <img src={pabloImg} alt="Pablo Garrido" className="PersonPhoto" />
   <h3>Pablo Garrido</h3>
   <p>Magíster en Química</p>
   <p className="PersonCommittees">

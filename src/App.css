@@ -413,3 +413,82 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+/* Dates section */
+.App-section--dates {
+  text-align: left;
+}
+
+.dates-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.dates-header__icon {
+  font-size: 2.5rem;
+}
+
+.dates-header h2 {
+  font-size: clamp(2rem, 3vw, 2.4rem);
+  margin: 0;
+}
+
+.dates-header__subtitle {
+  margin: 0.2rem 0 0;
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+/* Cards with the dates */
+.dates-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.date-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.4rem;
+  padding: 1.3rem 1.6rem;
+  min-width: 230px;
+  max-width: 280px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.date-card__label {
+  display: inline-block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  opacity: 0.75;
+  margin-bottom: 0.4rem;
+}
+
+.date-card__main {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.date-card__extra {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+  .dates-header {
+    align-items: flex-start;
+  }
+
+  .date-card {
+    width: 100%;
+    max-width: 100%;
+  }
+}
