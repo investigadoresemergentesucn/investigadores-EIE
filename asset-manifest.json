@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "./static/css/main.d746c5bc.css",
-    "main.js": "./static/js/main.8c56ed1c.js",
+    "main.js": "./static/js/main.16297a6a.js",
     "static/js/453.62a51843.chunk.js": "./static/js/453.62a51843.chunk.js",
     "static/media/Lucas H.jpeg": "./static/media/Lucas H.ff4b7de2e98bb2c5f209.jpeg",
     "static/media/tatiana.JPG": "./static/media/tatiana.29961eca6900a2b0be0d.JPG",
     "static/media/Andres.jpg": "./static/media/Andres.e94d6169d594cf1ee412.jpg",
     "static/media/Luis.jpeg": "./static/media/Luis.51d4094ec26e4cae958a.jpeg",
     "static/media/eie-logo-removebg.png": "./static/media/eie-logo-removebg.65493ca4ba77d6d35248.png",
+    "static/media/victoria.jpg": "./static/media/victoria.eb81802dd609eaa2aa01.jpg",
     "static/media/logo.png": "./static/media/logo.29e625b81f34023b7e21.png",
     "static/media/Bayron.jpg": "./static/media/Bayron.872cdcb56191fb95d21b.jpg",
-    "static/media/victoria.jpeg": "./static/media/victoria.e2094f79af86ae5c3916.jpeg",
     "static/media/ricardo.jpeg": "./static/media/ricardo.0ddd967430fa5e94f104.jpeg",
     "static/media/logocienciasbasicas.png": "./static/media/logocienciasbasicas.04e1e3d9a402b62288ce.png",
     "static/media/Escudo-UCN-Logo.png": "./static/media/Escudo-UCN-Logo.36bbacc83a9c2b0206c2.png",
@@ -20,11 +20,11 @@
     "static/media/cesarbonilla.jpg": "./static/media/cesarbonilla.69f240082dd960e1a3e3.jpg",
     "index.html": "./index.html",
     "main.d746c5bc.css.map": "./static/css/main.d746c5bc.css.map",
-    "main.8c56ed1c.js.map": "./static/js/main.8c56ed1c.js.map",
+    "main.16297a6a.js.map": "./static/js/main.16297a6a.js.map",
     "453.62a51843.chunk.js.map": "./static/js/453.62a51843.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d746c5bc.css",
-    "static/js/main.8c56ed1c.js"
+    "static/js/main.16297a6a.js"
   ]
 }
