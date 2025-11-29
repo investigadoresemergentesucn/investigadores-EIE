@@ -293,6 +293,17 @@ body {
   border: 2px solid rgba(255, 255, 255, 0.4);
 }
 
+/* --- Sponsor logo overrides --- */
+.PersonCard img.sponsor-rect {
+  width: 180px;          /* adjust if you want it bigger/smaller */
+  height: auto;
+  border-radius: 12px;   /* rectangle with soft corners */
+  object-fit: contain;
+  border: none;          /* remove circular border */
+  background-color: #ffffff;
+  padding: 8px 12px;     /* little white frame around the logo */
+}
+
 .PersonCard h4 {
   margin: 0;
   font-size: 1.05rem;
@@ -491,4 +502,20 @@ body {
     width: 100%;
     max-width: 100%;
   }
+}
+
+/* Sponsor logos: circles for UCN / Facultad, rectangle for Lithium */
+.sponsor-circle {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sponsor-rect {
+  border-radius: 12px;
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  object-fit: contain;
+  background-color: #ffffff;
+  padding: 8px;
 }

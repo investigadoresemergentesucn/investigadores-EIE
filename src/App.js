@@ -4,12 +4,16 @@ import { useEffect } from 'react';
 import eieLogoRmBG from './eie-logo-removebg.png';
 //CSS config
 import './App.css';
+//Logos sponsors
+import LogoCienciasBasicas from './sponsors/logocienciasbasicas.png';
+import LogoUCN from './sponsors/Escudo-UCN-Logo.png'
+import LogoLithium from './sponsors/lithium.png'
 
 // committee photos
 import defaultPhoto from './comite/logo.png';
 import macarenaImg from './comite/macarena.jpeg';
 import ricardoImg from './comite/ricardo.jpeg';
-import victoriaImg from './comite/victoria.jpeg';
+import victoriaImg from './comite/victoria.jpg';
 import cesarImg from './responsables/cesarbonilla.jpg';
 import luisImg from './responsables/luisrojas.jpeg';
 import bayronImg from './comite/Bayron.jpg';
@@ -58,7 +62,7 @@ function App() {
           className="App-logo"
           alt="Logo EIE" 
         />
-        <h1 className="App-title">Encuentro de Investigadores Emergentes</h1>
+        <h1 className="App-title">VIII Encuentro de Investigadores Emergentes</h1>
         <p className="App-subtitle">Facultad de Ciencias — Universidad Católica del Norte</p>
       </header>
 
@@ -68,10 +72,8 @@ function App() {
       <section className="App-description">
         <p>
           El <strong>Encuentro de Investigadores Emergentes (EIE)</strong> es una iniciativa 
-          organizada por estudiantes de postgrado de la 
-          <a href="https://www.ucn.cl/" target="_blank" rel="noreferrer"> Universidad Católica del Norte (UCN)</a>,
-          Facultad de Ciencias. Su objetivo es crear un espacio donde jóvenes investigadores 
-          puedan compartir sus avances, resultados y proyectos en desarrollo.
+          organizada por los estudiantes de postgrado de la facultad de Ciencias de la 
+          <a href="https://www.ucn.cl/" target="_blank" rel="noreferrer"> Universidad Católica del Norte (UCN)</a>. Su objetivo es promover el intercambio científico entre la comunidad universitaria, particularmente entre los estudiantes de pregrado y postgrado que desarrollan proyectos de investigación, además de fortalecer la interacción interdisciplinaria y visibilizar las lineas de investigación de cada programa dentro de la facultad de Ciencias. 
         </p>
 
         <p>
@@ -144,24 +146,24 @@ function App() {
             <tbody>
               <tr>
                 <td>Martes 6 Ene</td>
-                <td>09:00 – 09:30</td>
+                <td>Por confirmar</td>
                 <td>Apertura e inauguración</td>
                 <td>—</td>
                 <td>Auditorio principal</td>
               </tr>
               <tr>
                 <td>Martes 6 Ene</td>
-                <td>09:30 – 11:00</td>
+                <td>Por confirmar</td>
                 <td>Sesión Plenaria</td>
                 <td>Por confirmar</td>
                 <td>Auditorio principal</td>
               </tr>
               <tr>
                 <td>Martes 6 Ene</td>
-                <td>11:00 – 11:30</td>
+                <td>Por confirmar</td>
                 <td>Coffee Break</td>
                 <td>—</td>
-                <td>Hall Facultad de Ciencias</td>
+                <td>Hall</td>
               </tr>
               <tr>
                 <td colSpan="5" style={{ textAlign: "center", color: "#aaa" }}>
@@ -205,10 +207,10 @@ function App() {
         Recomendado: adjuntar el aval de tu director(a) si tu trabajo aún no está
         publicado.
       </li>
-      <li>
+{/*      <li>
         Al confirmar tu inscripción recibirás un <strong>QR</strong> para el acceso
         el día del evento.
-      </li>
+      </li> */}
     </ul>
   </div>
 
@@ -217,7 +219,6 @@ function App() {
       <h3>Resumen (abstract)</h3>
       <ul>
         <li>Extensión sugerida: 1 pagina (máx. 1 figura opcional).</li>
-        <li>Formato: título, autores/afiliaciones, palabras clave.</li>
         <li>Archivo: .PDF con nombre <code>Nombre_Apellido_Area.pdf</code></li>
       </ul>
            <div className="info-actions">
@@ -263,7 +264,7 @@ function App() {
       <tr>
         <td>A0 (841 × 1189 mm)</td>
         <td>Vertical</td>
-        <td>PDF/PNG alta resolución</td>
+        <td>Alta resolución</td>
         <td>Color</td>
       </tr>
     </tbody>
@@ -280,20 +281,31 @@ function App() {
       <h3>Modalidades y tiempos</h3>
       <ul>
         <li><strong>Charlas</strong>: 15 min + 5 min preguntas.</li>
-        <li><strong>Posters</strong>: sesión dedicada con recorrido de evaluadores.</li>
-        <li><strong>Plenarias</strong>: por invitación de los departamentos (por confirmar).</li>
+        <li><strong>Posters</strong>: sesión interactiva.</li>
+        <li><strong>Plenarias</strong>: (por confirmar).</li>
       </ul>
     </div>
 
-    {/* Logística rápida */}
-    <div className="info-card">
-      <h3>Logística rápida</h3>
-      <ul>
-        <li>Registro con <strong>QR</strong> en el acceso.</li>
-        <li>Soporte audiovisual: proyector HDMI; lleva tu adaptador si usas USB-C/DisplayPort.</li>
-        <li>Código de conducta: respeto, inclusión y trato profesional en todas las actividades.</li>
-      </ul>
-    </div>
+{/* Logística rápida */}
+<div className="info-card">
+  <h3>Logística rápida</h3>
+  <ul>
+    <li>Registro con <strong>QR</strong> el día del evento.</li>
+    <li><strong>Código de conducta:</strong> respeto, inclusión y trato profesional en todas las actividades.</li>
+    <li>
+      <strong>Seguridad:</strong> como parte del compromiso del evento, te pedimos revisar el{" "}
+      <a
+        href="http://recursoshumanos.ucn.cl/wp-content//uploads/2019/04/Procedimiento-emergencia.pdf"
+        className="App-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        PROCEDIMIENTO ESTRUCTURAL CRISIS Y EMERGENCIAS
+      </a>{" "}
+      (plan de gestión de riesgos de la UCN).
+    </li>
+  </ul>
+</div>
   </div>
 </section>
 
@@ -451,6 +463,42 @@ function App() {
           <br />
           <a href="mailto:investigadores.emergentes.ucn@gmail.com">investigadores.emergentes.ucn@gmail.com</a>
         </section>
+
+
+<section id="sponsors" className="App-section">
+  <h2>🤝 Sponsors</h2>
+  <br />
+
+  <div className="Committee-grid">
+    <div className="PersonCard">
+      <img
+        src={LogoUCN}
+        alt="Universidad Católica del Norte"
+        className="PersonPhoto sponsor-circle"
+      />
+      <h3>Universidad Católica del Norte</h3>
+    </div>
+
+    <div className="PersonCard">
+      <img
+        src={LogoCienciasBasicas}
+        alt="Facultad de Ciencias"
+        className="PersonPhoto sponsor-circle"
+      />
+      <h3>Facultad de Ciencias - UCN</h3>
+    </div>
+
+<div className="PersonCard">
+  <img
+    src={LogoLithium}
+    alt="Lithium"
+    className="sponsor-rect"
+  />
+  <h3>Lithium  I+D+i - UCN</h3>
+</div>
+  </div>
+</section>
+
       </main>
 
       {/* ====================== FOOTER ====================== */}
