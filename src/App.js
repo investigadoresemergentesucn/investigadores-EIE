@@ -8,6 +8,9 @@ import './App.css';
 import LogoCienciasBasicas from './sponsors/logocienciasbasicas.png';
 import LogoUCN from './sponsors/Escudo-UCN-Logo.png'
 import LogoLithium from './sponsors/lithium.png'
+import logoFISICA from './sponsors/logoFISICA.png'
+import logoUCNLSA from './sponsors/logoUCNLSA.png'
+import logoUCNQF from './sponsors/logoUCNQF.jpeg'
 
 // committee photos
 import defaultPhoto from './comite/logo.png';
@@ -110,7 +113,7 @@ function App() {
 
     <article className="date-card">
       <span className="date-card__label">Envío de resumen</span>
-      <p className="date-card__main">10 de diciembre 2025</p>
+      <p className="date-card__main">17 de diciembre 2025</p>
       <p className="date-card__extra">Hasta las 23:59 (CLT)</p>
     </article>
 
@@ -292,18 +295,18 @@ function App() {
   <ul>
     <li>Registro con <strong>QR</strong> el día del evento.</li>
     <li><strong>Código de conducta:</strong> respeto, inclusión y trato profesional en todas las actividades.</li>
-    <li>
-      <strong>Seguridad:</strong> como parte del compromiso del evento, te pedimos revisar el{" "}
-      <a
-        href="http://recursoshumanos.ucn.cl/wp-content//uploads/2019/04/Procedimiento-emergencia.pdf"
-        className="App-link"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        PROCEDIMIENTO ESTRUCTURAL CRISIS Y EMERGENCIAS
-      </a>{" "}
-      (plan de gestión de riesgos de la UCN).
-    </li>
+<li>
+  <strong>Seguridad:</strong> antes del evento, revisa el{" "}
+  <a
+    href="http://recursoshumanos.ucn.cl/wp-content//uploads/2019/04/Procedimiento-emergencia.pdf"
+    className="App-link"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    PROCEDIMIENTO ESTRUCTURAL CRISIS Y EMERGENCIAS
+  </a>
+  , el plan oficial de gestión de riesgos de la UCN.
+</li>
   </ul>
 </div>
   </div>
@@ -465,8 +468,8 @@ function App() {
         </section>
 
 
-<section id="sponsors" className="App-section">
-  <h2>🤝 Sponsors</h2>
+<section id="Patrocinadores" className="App-section">
+  <h2> Patrocinadores</h2>
   <br />
 
   <div className="Committee-grid">
@@ -488,16 +491,57 @@ function App() {
       <h3>Facultad de Ciencias - UCN</h3>
     </div>
 
-<div className="PersonCard">
-  <img
-    src={LogoLithium}
-    alt="Lithium"
-    className="sponsor-rect"
-  />
-  <h3>Lithium  I+D+i - UCN</h3>
-</div>
   </div>
 </section>
+
+<section id="sponsors" className="App-section">
+  <h2>Sponsors</h2>
+
+
+
+<div className="Committee-grid">
+
+    <div className="PersonCard">
+    <img
+      src={logoFISICA}
+      alt="Departamento de Física – UCN"
+      className="sponsor-circle"
+    />
+    <h3>Departamento de Física – UCN</h3>
+  </div>
+
+  <div className="PersonCard">
+    <img
+      src={LogoLithium}
+      alt="Lithium I+D+i - UCN"
+      className="sponsor-rect"
+    />
+    <h3>Lithium I+D+i – UCN</h3>
+  </div>
+
+
+
+  <div className="PersonCard">
+    <img
+      src={logoUCNLSA}
+      alt="Laboratorio de Servicios Analíticos (UCN-LSA)"
+      className="sponsor-rect"
+    />
+    <h3>Laboratorio de Servicios Analíticos - UCN</h3>
+  </div>
+
+  <div className="PersonCard">
+    <img
+      src={logoUCNQF}
+      alt="Química y Farmacia – UCN"
+      className="sponsor-circle"
+    />
+    <h3>Química y Farmacia – UCN</h3>
+  </div>
+</div>
+
+</section>
+
 
       </main>
 

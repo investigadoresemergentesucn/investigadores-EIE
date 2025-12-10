@@ -293,16 +293,7 @@ body {
   border: 2px solid rgba(255, 255, 255, 0.4);
 }
 
-/* --- Sponsor logo overrides --- */
-.PersonCard img.sponsor-rect {
-  width: 180px;          /* adjust if you want it bigger/smaller */
-  height: auto;
-  border-radius: 12px;   /* rectangle with soft corners */
-  object-fit: contain;
-  border: none;          /* remove circular border */
-  background-color: #ffffff;
-  padding: 8px 12px;     /* little white frame around the logo */
-}
+
 
 .PersonCard h4 {
   margin: 0;
@@ -518,4 +509,54 @@ body {
   object-fit: contain;
   background-color: #ffffff;
   padding: 8px;
+}
+
+/* ===== Sponsors layout ===== */
+
+#sponsors .PersonCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;  /* logo arriba, texto abajo */
+  padding: 24px 16px;
+  min-height: 260px;               /* reduce si los ves muy altos */
+}
+
+/* comportamiento común de todos los logos de sponsors */
+#sponsors .PersonCard img {
+  max-height: 120px;  /* hace que quepan bien dentro de la tarjeta */
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+/* Lithium + LSA: logo rectangular con marco blanco suave */
+.sponsor-rect {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 8px 12px;
+}
+
+/* Física + Química y Farmacia: solo el logo, sin marco blanco extra */
+.sponsor-circle {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 50%;
+}
+
+/* títulos un poco más pequeños dentro de sponsors */
+#sponsors .PersonCard h3 {
+  font-size: 1rem;
+  line-height: 1.3;
+  text-align: center;
+}
+
+/* --- Sponsor logo overrides --- */
+.PersonCard img.sponsor-rect {
+  width: 150px;          /* adjust if you want it bigger/smaller */
+  height: auto;
+  border-radius: 20px;   /* rectangle with soft corners */
+  object-fit: contain;
+  border: none;          /* remove circular border */
+  background-color: #ffffff;
+  padding: 8px 12px;     /* little white frame around the logo */
 }
