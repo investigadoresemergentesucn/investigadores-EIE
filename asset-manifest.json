@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.c572e23a.css",
-    "main.js": "./static/js/main.0b87f600.js",
+    "main.js": "./static/js/main.a3452db3.js",
     "static/js/453.62a51843.chunk.js": "./static/js/453.62a51843.chunk.js",
     "static/media/Lucas H.jpeg": "./static/media/Lucas H.ff4b7de2e98bb2c5f209.jpeg",
     "static/media/tatiana.JPG": "./static/media/tatiana.29961eca6900a2b0be0d.JPG",
@@ -15,6 +15,7 @@
     "static/media/ricardo.jpeg": "./static/media/ricardo.0ddd967430fa5e94f104.jpeg",
     "static/media/logocienciasbasicas.png": "./static/media/logocienciasbasicas.04e1e3d9a402b62288ce.png",
     "static/media/Escudo-UCN-Logo.png": "./static/media/Escudo-UCN-Logo.36bbacc83a9c2b0206c2.png",
+    "static/media/logoIA.png": "./static/media/logoIA.a6d48560f5ba5772d927.png",
     "static/media/macarena.jpeg": "./static/media/macarena.230779ea9cde7a4155d8.jpeg",
     "static/media/Diany.JPG": "./static/media/Diany.8ce2bc237c30d51ee704.JPG",
     "static/media/pablo.jpg": "./static/media/pablo.f4baf6bc6580ca07f0ef.jpg",
@@ -23,11 +24,11 @@
     "static/media/logoUCNQF.jpeg": "./static/media/logoUCNQF.f110be345dd1f3ae533d.jpeg",
     "index.html": "./index.html",
     "main.c572e23a.css.map": "./static/css/main.c572e23a.css.map",
-    "main.0b87f600.js.map": "./static/js/main.0b87f600.js.map",
+    "main.a3452db3.js.map": "./static/js/main.a3452db3.js.map",
     "453.62a51843.chunk.js.map": "./static/js/453.62a51843.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c572e23a.css",
-    "static/js/main.0b87f600.js"
+    "static/js/main.a3452db3.js"
   ]
 }
