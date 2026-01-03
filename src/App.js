@@ -11,6 +11,7 @@ import LogoLithium from './sponsors/lithium.png'
 import logoFISICA from './sponsors/logoFISICA.png'
 import logoUCNLSA from './sponsors/logoUCNLSA.png'
 import logoUCNQF from './sponsors/logoUCNQF.jpeg'
+import logoIA from './sponsors/logoIA.png'
 
 // committee photos
 import defaultPhoto from './comite/logo.png';
@@ -119,7 +120,7 @@ function App() {
 
     <article className="date-card">
       <span className="date-card__label">Aviso de aceptación</span>
-      <p className="date-card__main">19 de diciembre 2025</p>
+      <p className="date-card__main">23 de diciembre 2025</p>
       <p className="date-card__extra">Vía correo electrónico</p>
     </article>
   </div>
@@ -510,6 +511,24 @@ function App() {
     <h3>Departamento de Física – UCN</h3>
   </div>
 
+      <div className="PersonCard">
+    <img
+      src={logoIA}
+      alt="Departamento de Física – UCN"
+      className="sponsor-rect"
+    />
+    <h3>Departamento de Física – UCN</h3>
+  </div>
+
+    <div className="PersonCard">
+    <img
+      src={logoUCNQF}
+      alt="Química y Farmacia – UCN"
+      className="sponsor-circle"
+    />
+    <h3>Química y Farmacia – UCN</h3>
+  </div>
+
   <div className="PersonCard">
     <img
       src={LogoLithium}
@@ -530,14 +549,7 @@ function App() {
     <h3>Laboratorio de Servicios Analíticos - UCN</h3>
   </div>
 
-  <div className="PersonCard">
-    <img
-      src={logoUCNQF}
-      alt="Química y Farmacia – UCN"
-      className="sponsor-circle"
-    />
-    <h3>Química y Farmacia – UCN</h3>
-  </div>
+
 </div>
 
 </section>
