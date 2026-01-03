@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "./static/css/main.c572e23a.css",
-    "main.js": "./static/js/main.795d7911.js",
-    "static/js/453.62a51843.chunk.js": "./static/js/453.62a51843.chunk.js",
+    "main.css": "./static/css/main.0111c33e.css",
+    "main.js": "./static/js/main.27012a10.js",
+    "static/js/453.e1d4b278.chunk.js": "./static/js/453.e1d4b278.chunk.js",
     "static/media/Lucas H.jpeg": "./static/media/Lucas H.ff4b7de2e98bb2c5f209.jpeg",
+    "static/media/jonathan.png": "./static/media/jonathan.a8fe148130349ee581ba.png",
     "static/media/tatiana.JPG": "./static/media/tatiana.29961eca6900a2b0be0d.JPG",
+    "static/media/wai.jpg": "./static/media/wai.6951988ea4dfff561ff4.jpg",
     "static/media/Andres.jpg": "./static/media/Andres.e94d6169d594cf1ee412.jpg",
     "static/media/Luis.jpeg": "./static/media/Luis.51d4094ec26e4cae958a.jpeg",
     "static/media/eie-logo-removebg.png": "./static/media/eie-logo-removebg.65493ca4ba77d6d35248.png",
@@ -12,6 +14,7 @@
     "static/media/logo.png": "./static/media/logo.29e625b81f34023b7e21.png",
     "static/media/logoFISICA.png": "./static/media/logoFISICA.ab7f212f46b0833bd5e3.png",
     "static/media/Bayron.jpg": "./static/media/Bayron.872cdcb56191fb95d21b.jpg",
+    "static/media/eduardo.jpg": "./static/media/eduardo.4514801d0d90d13a3cdf.jpg",
     "static/media/ricardo.jpeg": "./static/media/ricardo.0ddd967430fa5e94f104.jpeg",
     "static/media/logocienciasbasicas.png": "./static/media/logocienciasbasicas.04e1e3d9a402b62288ce.png",
     "static/media/Escudo-UCN-Logo.png": "./static/media/Escudo-UCN-Logo.36bbacc83a9c2b0206c2.png",
@@ -19,16 +22,17 @@
     "static/media/macarena.jpeg": "./static/media/macarena.230779ea9cde7a4155d8.jpeg",
     "static/media/Diany.JPG": "./static/media/Diany.8ce2bc237c30d51ee704.JPG",
     "static/media/pablo.jpg": "./static/media/pablo.f4baf6bc6580ca07f0ef.jpg",
+    "static/media/carla.jpeg": "./static/media/carla.19fe5db3aad4f5f9e7f3.jpeg",
     "static/media/cesarbonilla.jpg": "./static/media/cesarbonilla.69f240082dd960e1a3e3.jpg",
     "static/media/lithium.png": "./static/media/lithium.1e454f84061028b7ffa0.png",
     "static/media/logoUCNQF.jpeg": "./static/media/logoUCNQF.f110be345dd1f3ae533d.jpeg",
     "index.html": "./index.html",
-    "main.c572e23a.css.map": "./static/css/main.c572e23a.css.map",
-    "main.795d7911.js.map": "./static/js/main.795d7911.js.map",
-    "453.62a51843.chunk.js.map": "./static/js/453.62a51843.chunk.js.map"
+    "main.0111c33e.css.map": "./static/css/main.0111c33e.css.map",
+    "main.27012a10.js.map": "./static/js/main.27012a10.js.map",
+    "453.e1d4b278.chunk.js.map": "./static/js/453.e1d4b278.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c572e23a.css",
-    "static/js/main.795d7911.js"
+    "static/css/main.0111c33e.css",
+    "static/js/main.27012a10.js"
   ]
 }
