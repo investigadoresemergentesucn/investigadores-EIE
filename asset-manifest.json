@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "./static/css/main.0111c33e.css",
-    "main.js": "./static/js/main.86c4435f.js",
+    "main.css": "./static/css/main.d0443531.css",
+    "main.js": "./static/js/main.e3d53b96.js",
     "static/js/453.e1d4b278.chunk.js": "./static/js/453.e1d4b278.chunk.js",
+    "static/media/salasK.mp4": "./static/media/salasK.581fc243460a4b5b2cad.mp4",
     "static/media/Lucas H.jpeg": "./static/media/Lucas H.ff4b7de2e98bb2c5f209.jpeg",
     "static/media/jonathan.png": "./static/media/jonathan.a8fe148130349ee581ba.png",
     "static/media/tatiana.JPG": "./static/media/tatiana.29961eca6900a2b0be0d.JPG",
@@ -11,7 +12,6 @@
     "static/media/Luis.jpeg": "./static/media/Luis.51d4094ec26e4cae958a.jpeg",
     "static/media/eie-logo-removebg.png": "./static/media/eie-logo-removebg.65493ca4ba77d6d35248.png",
     "static/media/victoria.jpg": "./static/media/victoria.eb81802dd609eaa2aa01.jpg",
-    "static/media/logo.png": "./static/media/logo.29e625b81f34023b7e21.png",
     "static/media/logoFISICA.png": "./static/media/logoFISICA.ab7f212f46b0833bd5e3.png",
     "static/media/Bayron.jpg": "./static/media/Bayron.872cdcb56191fb95d21b.jpg",
     "static/media/eduardo.jpg": "./static/media/eduardo.4514801d0d90d13a3cdf.jpg",
@@ -27,12 +27,12 @@
     "static/media/lithium.png": "./static/media/lithium.1e454f84061028b7ffa0.png",
     "static/media/logoUCNQF.jpeg": "./static/media/logoUCNQF.f110be345dd1f3ae533d.jpeg",
     "index.html": "./index.html",
-    "main.0111c33e.css.map": "./static/css/main.0111c33e.css.map",
-    "main.86c4435f.js.map": "./static/js/main.86c4435f.js.map",
+    "main.d0443531.css.map": "./static/css/main.d0443531.css.map",
+    "main.e3d53b96.js.map": "./static/js/main.e3d53b96.js.map",
     "453.e1d4b278.chunk.js.map": "./static/js/453.e1d4b278.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0111c33e.css",
-    "static/js/main.86c4435f.js"
+    "static/css/main.d0443531.css",
+    "static/js/main.e3d53b96.js"
   ]
 }
