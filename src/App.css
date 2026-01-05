@@ -560,3 +560,52 @@ body {
   background-color: #ffffff;
   padding: 8px 12px;     /* little white frame around the logo */
 }
+
+.plenary-grid {
+  max-width: 1000px;
+}
+
+.plenary-photo {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+}
+
+.plenary-talk {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #e7efff;
+}
+
+.plenary-affil {
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.video-card{
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.01);
+  background: rgba(255,255,255,0.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  opacity: 100;
+  transform: translateY(18px);
+  transition: opacity 650ms ease, transform 650ms ease;
+}
+
+.video-native{
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  display: block;
+}
+
+
+.video-card.is-visible{
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+

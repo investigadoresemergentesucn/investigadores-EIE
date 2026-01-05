@@ -1,5 +1,6 @@
 //React
-import { useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
+
 //Logo EIE
 import eieLogoRmBG from './eie-logo-removebg.png';
 //CSS config
@@ -13,8 +14,17 @@ import logoUCNLSA from './sponsors/logoUCNLSA.png'
 import logoUCNQF from './sponsors/logoUCNQF.jpeg'
 import logoIA from './sponsors/logoIA.png'
 
+// Plenary speakers photos
+import eduardoPlen from './plenaristas/eduardo.jpg';
+import carlaPlen from './plenaristas/carla.jpeg';
+import jonathanPlen from './plenaristas/jonathan.png';
+import waiPlen from './plenaristas/wai.jpg';
+
+//video
+import salasKVideo from './videos/salasK.mp4';
+
+
 // committee photos
-import defaultPhoto from './comite/logo.png';
 import macarenaImg from './comite/macarena.jpeg';
 import ricardoImg from './comite/ricardo.jpeg';
 import victoriaImg from './comite/victoria.jpg';
@@ -31,6 +41,27 @@ import pabloImg from './comite/pablo.jpg';
 import './App.css';
 
 function App() {
+  const videoRef = useRef(null);
+const [videoVisible, setVideoVisible] = useState(false);
+
+useEffect(() => {
+  const el = videoRef.current;
+  if (!el) return;
+
+  const obs = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        setVideoVisible(true);
+        obs.disconnect(); // animate once
+      }
+    },
+    { threshold: 0.25 }
+  );
+
+  obs.observe(el);
+  return () => obs.disconnect();
+}, []);
+
   useEffect(() => {
     // Remove any #section from the URL
     if (window.location.hash) {
@@ -55,6 +86,8 @@ function App() {
         <nav className="App-nav">
           <a href="#informacion">Información</a>
           <a href="#programa">Programa</a>
+          <a href="#video">Video</a>
+          <a href="#plenaristas">Invitados</a>
           <a href="#fecha">Fecha</a>
           <a href="#comite">Comité</a>
           <a href="#contacto">Contacto</a>
@@ -92,6 +125,8 @@ function App() {
         </p>
       </section>
 
+
+
       {/* ====================== MAIN ====================== */}
       <main className="App-main">
 <section id="fecha" className="App-section App-section--dates">
@@ -100,7 +135,7 @@ function App() {
     <div>
       <h2>Fechas y lugar</h2>
       <p className="dates-header__subtitle">
-        UCN · Salas K
+        UCN · Salas K 121 C, Campus Universitario UCN Avda. Angamos 0610, Antofagasta
       </p>
     </div>
   </div>
@@ -126,58 +161,83 @@ function App() {
   </div>
 </section>
 
+        {/* --- Sección 3: Programa / Timetable --- */}
+<section id="programa" className="App-section">
+  <h2>🕒 Programa del evento</h2>
+  <p>
+    El programa oficial (horarios, salas y charlas) está disponible en el siguiente documento:
+  </p>
+
+  <div className="info-actions">
+    <a
+      className="btn outline"
+      href="https://drive.google.com/file/d/1bhTQ0m4QomFdeGJdhWhaVVK4cg1NSBrf/view?usp=drive_link"
+      target="_blank"
+      rel="noreferrer"
+    >
+      Ver programa (PDF)
+    </a>
+  </div>
+</section>
+
+<section id="video" className="App-section">
+  <h2>🎬 Video</h2>
+  <p className="Section-intro">
+    Guía de como llegar a las Salas K (UCN) donde se realizará el encuentro.
+  </p>
+
+  <div
+    ref={videoRef}
+    className={`video-card ${videoVisible ? "is-visible" : ""}`}
+  >
+    <video className="video-native" controls preload="metadata">
+      <source src={salasKVideo} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
 
 
-                {/* --- Sección 3: Programa / Timetable --- */}
-        <section id="programa" className="App-section">
-          <h2>🕒 Programa del evento</h2>
-          <p>
-            El siguiente programa tentativo muestra la estructura general del evento.  
-            Los horarios y charlas serán confirmados próximamente.
-          </p>
 
-<div className="App-tableWrapper">
-          <table className="App-table">
-            <thead>
-              <tr>
-                <th>Día</th>
-                <th>Hora</th>
-                <th>Actividad</th>
-                <th>Ponente / Área</th>
-                <th>Ubicación</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Martes 6 Ene</td>
-                <td>Por confirmar</td>
-                <td>Apertura e inauguración</td>
-                <td>—</td>
-                <td>Auditorio principal</td>
-              </tr>
-              <tr>
-                <td>Martes 6 Ene</td>
-                <td>Por confirmar</td>
-                <td>Sesión Plenaria</td>
-                <td>Por confirmar</td>
-                <td>Auditorio principal</td>
-              </tr>
-              <tr>
-                <td>Martes 6 Ene</td>
-                <td>Por confirmar</td>
-                <td>Coffee Break</td>
-                <td>—</td>
-                <td>Hall</td>
-              </tr>
-              <tr>
-                <td colSpan="5" style={{ textAlign: "center", color: "#aaa" }}>
-                  <em>Más actividades serán añadidas próximamente...</em>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          </div>
-        </section>
+
+
+<section id="plenaristas" className="App-section">
+  <h2>🎤 Invitados a charla plenaria</h2>
+  <p className="Section-intro">
+    Conoce a los(as) invitados(as) a charla plenaria y los títulos de sus charlas.
+  </p>
+
+  <div className="Committee-grid plenary-grid">
+    <div className="PersonCard plenary-card">
+      <img src={eduardoPlen} alt="Eduardo Unda-Sanzana" className="PersonPhoto plenary-photo" />
+      <h3>Dr. Eduardo Unda-Sanzana</h3>
+      <p className="plenary-talk"><strong>Título:</strong> La vida, el Universo, y todo lo demás</p>
+      <p className="plenary-affil">Universidad de Antofagasta</p>
+    </div>
+
+    <div className="PersonCard plenary-card">
+      <img src={carlaPlen} alt="Carla ..." className="PersonPhoto plenary-photo" />
+      <h3>Dra. Carla Hermann</h3>
+      <p className="plenary-talk"><strong>Título:</strong> Bright and Quantum: Toward Intense and Non-Gaussian Quantum Light</p>
+      <p className="plenary-affil">Universidad de Chile</p>
+    </div>
+
+    <div className="PersonCard plenary-card">
+      <img src={jonathanPlen} alt="Jonathan ..." className="PersonPhoto plenary-photo" />
+      <h3>Dr. Jonathan Cisterna</h3>
+      <p className="plenary-talk"><strong>Título:</strong> Nuevos materiales para almacenamiento de energía</p>
+      <p className="plenary-affil">Universidad Católica del Norte</p>
+    </div>
+
+    <div className="PersonCard plenary-card">
+      <img src={waiPlen} alt="Wai ..." className="PersonPhoto plenary-photo" />
+      <h3>Dr. Wai-Houng</h3>
+      <p className="plenary-talk"><strong>Título:</strong> Nanomedicina: una oportunidad hacia la individualización de la terapia</p>
+      <p className="plenary-affil">Universidad Católica del Norte</p>
+    </div>
+  </div>
+</section>
+
 
                 {/* --- Sección 4: Información general / FAQ --- */}
 <section id="informacion" className="App-section">
@@ -234,7 +294,7 @@ function App() {
 <div className="info-card">
   <h3>Logos oficiales</h3>
   <p>
-    Descarga los logotipos oficiales del Encuentro para usarlos en tus pósters
+    Descarga el logo oficial del Encuentro y la barra de auspiciadores para usarlos en tus pósters
     y presentaciones.
   </p>
   <div className="info-actions">
@@ -276,7 +336,7 @@ function App() {
 </div>
 
       <ul>
-        <li>Incluir logo de la Facultad de Ciencias de la UCN, EIE y tu programa/centro (si corresponde).</li>
+        <li>Incluir logo del evento, auspiciadores y tu programa/centro (si corresponde).</li>
       </ul>
     </div>
 
@@ -286,7 +346,7 @@ function App() {
       <ul>
         <li><strong>Charlas</strong>: 15 min + 5 min preguntas.</li>
         <li><strong>Posters</strong>: sesión interactiva.</li>
-        <li><strong>Plenarias</strong>: (por confirmar).</li>
+        <li><strong>Plenarias</strong>: 30 min + 10 min preguntas.</li>
       </ul>
     </div>
 
@@ -514,10 +574,10 @@ function App() {
       <div className="PersonCard">
     <img
       src={logoIA}
-      alt="Departamento de Física – UCN"
+      alt="Instituto de Astronomía – UCN"
       className="sponsor-rect"
     />
-    <h3>Departamento de Física – UCN</h3>
+    <h3>Instituto de Astronomía – UCN</h3>
   </div>
 
     <div className="PersonCard">
