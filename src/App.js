@@ -40,6 +40,59 @@ import pabloImg from './comite/pablo.jpg';
 
 import './App.css';
 
+
+// Pictures of the event
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay, EffectFade } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/effect-fade";
+
+// Gallery
+
+
+function EventCarousel() {
+  const images = require.context("./gallery", false, /\.jpg$/);
+
+  const photos = Array.from({ length: 28 }, (_, i) => {
+    const n = String(i + 1).padStart(2, "0");
+    return {
+      src: images(`./${n}.jpg`),
+      alt: `EIE 2026 - Foto ${i + 1}`,
+    };
+  });
+
+  return (
+    <div className="carouselWrap">
+<Swiper
+  modules={[Navigation, Pagination, Autoplay, EffectFade]}
+  slidesPerView={1}
+  spaceBetween={0}
+  navigation
+  pagination={{ clickable: true }}
+  autoplay={{ delay: 3200, disableOnInteraction: false, pauseOnMouseEnter: true }}
+  loop
+  effect="fade"
+  speed={650}
+>
+
+
+        {photos.map((p, i) => (
+          <SwiperSlide key={i}>
+            <div className="carouselSlide">
+              <img className="carouselImg" src={p.src} alt={p.alt} loading="lazy" />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
+}
+
+
+
 function App() {
   const videoRef = useRef(null);
 const [videoVisible, setVideoVisible] = useState(false);
@@ -85,10 +138,10 @@ useEffect(() => {
       <header className="App-header">
         <nav className="App-nav">
           <a href="#informacion">Información</a>
+          <a href="#fecha">Fecha</a>
           <a href="#programa">Programa</a>
           <a href="#video">Video</a>
           <a href="#plenaristas">Invitados</a>
-          <a href="#fecha">Fecha</a>
           <a href="#comite">Comité</a>
           <a href="#contacto">Contacto</a>
         </nav>
@@ -123,8 +176,52 @@ useEffect(() => {
         <p>
           ¡Todos son bienvenidos a participar y contribuir al fortalecimiento de la investigación en la Región!
         </p>
-      </section>
+        <div className="info-card info-card--wide">
+  <h3>✨ Momentos del evento</h3>
+  <p>Una galería con algunos momentos del VIII EIE.</p>
+  <EventCarousel />
+</div>
 
+  {/* Material de fotos del evento */}
+<div className="info-card info-card--wide">
+  <h3>📸 Material de fotos del evento</h3>
+  <p>
+    El material de fotos del evento puede ser descargado desde el siguiente enlace:
+  </p>
+
+  <div className="info-actions">
+    <a
+      className="btn btn-red"
+      href="https://drive.google.com/drive/folders/1tdyQ3Daz62vJzem4bEs2_mDqD242QNOq?usp=drive_link"
+      target="_blank"
+      rel="noreferrer"
+    >
+      Descargar fotos
+    </a>
+  </div>
+</div>
+
+{/* Libro de resúmenes */}
+<div className="info-card info-card--wide">
+  <h3>📘 Libro de resúmenes del evento</h3>
+  <p>
+    El libro de resúmenes del evento puede ser descargado desde el siguiente enlace:
+  </p>
+
+  <div className="info-actions">
+    <a
+      className="btn btn-red"
+      href="https://drive.google.com/file/d/18q7gCYDFUQWEekLLxreDQ_2tS-xWucwz/view?usp=drive_link"
+      target="_blank"
+      rel="noreferrer"
+    >
+      Descargar libro de resúmenes
+    </a>
+  </div>
+</div>
+
+
+      </section>
 
 
       {/* ====================== MAIN ====================== */}
@@ -183,7 +280,7 @@ useEffect(() => {
 <section id="video" className="App-section">
   <h2>🎬 Video</h2>
   <p className="Section-intro">
-    Guía de como llegar a las Salas K (UCN) donde se realizará el encuentro.
+    Video guía de como llegar a las salas K 121 C (UCN).
   </p>
 
   <div
@@ -247,6 +344,11 @@ useEffect(() => {
     formatos de póster, criterios de selección y detalles logísticos.
   </p>
 
+
+
+
+
+
 <div className="info-grid">
   {/* Inscripción */}
   <div className="info-card info-card--wide">
@@ -305,6 +407,10 @@ useEffect(() => {
       Descargar logos
     </a>
   </div>
+
+
+
+
 </div>
 
 
@@ -618,21 +724,84 @@ useEffect(() => {
       </main>
 
       {/* ====================== FOOTER ====================== */}
-<footer className="App-footer">
-  <div style={{display:"flex", justifyContent:"center", alignItems:"center", gap:12, flexWrap:"wrap"}}>
-    <img
-      src={require('./Escudo-UCN-Logo.png')}
-      alt="Logo UCN"
-      style={{height:50, width:"auto"}}
-    />
-    <p>© 2026 Investigadores Emergentes — Facultad de Ciencias UCN</p>
-        <img
-      src={require('./logocienciasbasicas.png')}
-      alt="Logo UCN"
-      style={{height:50, width:"auto"}}
-    />
+{/* ====================== FOOTER ====================== */}
+<footer className="eieF">
+  <div className="eieF__inner">
+    {/* Left: logos */}
+    <div className="eieF__logos" aria-label="Instituciones">
+      {/* Use your already imported logos instead of require() */}
+      <img
+        src={LogoUCN}
+        alt="Universidad Católica del Norte"
+        className="eieF__logo eieF__logo--ucn"
+        loading="lazy"
+      />
+      <img
+        src={LogoCienciasBasicas}
+        alt="Facultad de Ciencias - UCN"
+        className="eieF__logo eieF__logo--fac"
+        loading="lazy"
+      />
+    </div>
+
+    {/* Center: text */}
+    <div className="eieF__center">
+      <p className="eieF__title">Investigadores Emergentes UCN</p>
+      <p className="eieF__meta">
+        © {new Date().getFullYear()} · Facultad de Ciencias — Universidad Católica del Norte
+      </p>
+    </div>
+
+    {/* Right: social */}
+    <div className="eieF__social" aria-label="Social links">
+      <a
+        className="eieF__iconLink"
+        href="https://www.linkedin.com/in/ricardo-zamora-80b714193/"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="LinkedIn de Ricardo Zamora"
+        title="LinkedIn"
+      >
+        {/* LinkedIn icon (inline SVG) */}
+        <svg viewBox="0 0 24 24" className="eieF__icon" aria-hidden="true">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.047c.476-.9 1.637-1.85 3.368-1.85 3.6 0 4.267 2.369 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.814 20.452H3.86V9h2.954v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0z" />
+        </svg>
+        <span className="eieF__iconText">LinkedIn</span>
+      </a>
+
+      <a
+        className="eieF__iconLink"
+        href="https://github.com/ricardozamora99"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="GitHub de Ricardo Zamora"
+        title="GitHub"
+      >
+        {/* GitHub icon (inline SVG) */}
+        <svg viewBox="0 0 24 24" className="eieF__icon" aria-hidden="true">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 15.07 3.633 14.7 3.633 14.7c-1.087-.744.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.807 1.305 3.492.998.108-.776.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23a11.49 11.49 0 0 1 3.003-.404c1.02.005 2.045.138 3.003.404 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.435.375.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12z" />
+        </svg>
+        <span className="eieF__iconText">GitHub</span>
+      </a>
+    </div>
+  </div>
+
+  {/* Bottom slim line */}
+  <div className="eieF__bottom">
+    <p className="eieF__bottomText">
+      Sitio web desarrollado por Ricardo Zamora · {" "}
+      <a
+        className="eieF__bottomLink"
+        href="https://www.linkedin.com/in/ricardo-zamora-80b714193/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        contacto
+      </a>
+    </p>
   </div>
 </footer>
+
 
     </div>
   );
